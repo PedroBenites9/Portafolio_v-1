@@ -3,7 +3,7 @@ import Model3d from "./Model3d";
 
 const Container = styled.div`
   height: 70vh;
-  width: 100%;
+  width: 50%;
 `;
 
 const Test = () => {
