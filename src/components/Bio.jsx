@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Test from "./Test";
-import Model3d from "./Model3d";
 
 const Section = styled.div`
   height: 100vh;
