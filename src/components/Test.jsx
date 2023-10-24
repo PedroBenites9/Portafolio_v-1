@@ -2,8 +2,8 @@ import styled from "styled-components";
 import Model3d from "./Model3d";
 
 const Container = styled.div`
-  height: 70vh;
-  width: 100%;
+  height: 40vh;
+  width: 20%;
 `;
 
 const Test = () => {
