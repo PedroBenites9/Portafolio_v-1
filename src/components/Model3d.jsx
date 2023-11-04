@@ -12,7 +12,7 @@ const Model3d = () => {
       <PerspectiveCamera makeDefault position={[0, 1, 2]} />
       <Stage environment={"sunset"} intensity={0.002} contactShadow={true}>
         {/* <Matesuli /> */}
-        <Mateshorugua scale={0.01} />
+        <Mateshorugua scale={0.05} />
       </Stage>
     </Canvas>
   );

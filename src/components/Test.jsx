@@ -2,8 +2,9 @@ import styled from "styled-components";
 import Model3d from "./Model3d";
 
 const Container = styled.div`
-  height: 40vh;
-  width: 20%;
+  height: 50vh;
+  width: 50%;
+  margin: 0 auto;
 `;
 
 const Test = () => {
