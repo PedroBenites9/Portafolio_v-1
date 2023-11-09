@@ -64,7 +64,7 @@ const Instagram = styled.a`
     height: 100%;
     top: -90px;
     left: 0;
-    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    background: linear-gradient(-45deg, #fa0f94, #ffec17);
     position: absolute;
     transition: 0.5s;
   }
