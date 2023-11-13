@@ -23,6 +23,15 @@ const Timeline = styled.div`
     z-index: 1;
     animation: moveline 6s linear forwards;
   }
+  @keyframes moveline {
+    0% {
+      height: 0;
+    }
+
+    100% {
+      height: 100%;
+    }
+  }
 `;
 const CardLeft = styled.div`
   padding: 10px 50px;
@@ -100,7 +109,7 @@ const TimeLine = () => {
   return (
     <Section>
       <Timeline>
-        <CardLeft>
+        <CardLeft data-aos="fade-left">
           <Dot />
           <ContainerData>
             <Title>Secundaria Tecnica</Title>
