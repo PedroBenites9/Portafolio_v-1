@@ -14,31 +14,20 @@ import { useGLTF } from "@react-three/drei";
 export default function Model(props) {
   const { nodes, materials } = useGLTF("/mateUruguasho2-transformed.glb");
   return (
-    <group {...props} dispose={null} scale={0.1}>
+    <group {...props} dispose={null}>
       <mesh
         geometry={nodes.Object_4.geometry}
         material={materials.FRENTE_MATE}
-        scale={0.1}
       />
       <mesh
         geometry={nodes.Object_5.geometry}
         material={materials["FRENTE_MATE.1"]}
-        scale={0.1}
       />
-      <mesh
-        geometry={nodes.Object_6.geometry}
-        material={materials.METAL}
-        scale={0.1}
-      />
-      <mesh
-        geometry={nodes.Object_8.geometry}
-        material={materials.YERBA}
-        scale={0.1}
-      />
+      <mesh geometry={nodes.Object_6.geometry} material={materials.METAL} />
+      <mesh geometry={nodes.Object_8.geometry} material={materials.YERBA} />
       <mesh
         geometry={nodes.Object_11.geometry}
         material={materials["METAL.2"]}
-        scale={0.1}
       />
     </group>
   );
