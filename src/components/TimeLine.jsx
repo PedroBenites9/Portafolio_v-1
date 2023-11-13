@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Section = styled.div`
-  height: 100vh;
+  height: 100%;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
@@ -9,8 +9,8 @@ const Section = styled.div`
 
 const Timeline = styled.div`
   position: relative;
-  max-width: 1200px;
-  margin: 109px auto;
+  max-width: 60%;
+  margin-top: 5%;
   &::after {
     content: "";
     position: absolute;
@@ -34,21 +34,25 @@ const Timeline = styled.div`
   }
 `;
 const CardLeft = styled.div`
-  padding: 10px 50px;
+  padding: 1% 2%;
   position: relative;
-  width: 40%;
+  max-width: 40%;
+  height: auto;
   background: rgba(255, 255, 255, 0.1);
-  left: -12%;
+  left: -5%;
+  &:first-child {
+    margin-bottom: 15%;
+  }
 `;
 const CardRight = styled.div`
-  padding: 10px 50px;
+  padding: 1% 2%;
   position: relative;
-  width: 40%;
+  width: 50%;
   background: rgba(255, 255, 255, 0.1);
   right: -60%;
 `;
 
-const Dot = styled.span`
+const DotLeft = styled.span`
   border: 4px solid #fdfdfd;
   background: rgb(155, 155, 155);
   position: absolute;
@@ -56,7 +60,7 @@ const Dot = styled.span`
   height: 40px;
   border-radius: 50%;
   margin: 0 -27.2%;
-  right: -29px;
+  left: 50%;
   top: 32px;
   z-index: 2;
 `;
@@ -110,7 +114,7 @@ const TimeLine = () => {
     <Section>
       <Timeline>
         <CardLeft data-aos="fade-left">
-          <Dot />
+          <DotLeft />
           <ContainerData>
             <Title>Secundaria Tecnica</Title>
             <Date>2013 - 2018</Date>
@@ -138,7 +142,7 @@ const TimeLine = () => {
           </ContainerData>
         </CardRight>
         <CardLeft>
-          <Dot />
+          <DotLeft />
           <ContainerData>
             <Title>Secundaria Tecnica</Title>
             <Date>2013 - 2018</Date>
