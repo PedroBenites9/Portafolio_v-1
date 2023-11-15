@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Fade, Bounce } from "react-reveal";
 
 const Section = styled.div`
   height: 100%;
@@ -10,18 +11,18 @@ const Section = styled.div`
 const Timeline = styled.div`
   position: relative;
   max-width: 60%;
-  margin-top: 5%;
+  margin: 3% 0;
   &::after {
     content: "";
     position: absolute;
-    width: 6px;
+    width: 5px;
     height: 100%;
     background: #fff;
     top: 0;
     left: 50%;
     margin-left: -3px;
-    z-index: 1;
-    animation: moveline 6s linear forwards;
+    z-index: 0;
+    animation: moveline 7s linear forwards;
   }
   @keyframes moveline {
     0% {
@@ -40,9 +41,20 @@ const CardLeft = styled.div`
   height: auto;
   background: rgba(255, 255, 255, 0.1);
   left: -5%;
+  /* animation: fade-down 2s;
   &:first-child {
     margin-bottom: 15%;
   }
+  @keyframes fade-down {
+    0% {
+      opacity: 0;
+      transform: traslateY(-30px) scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: traslateY(0) scale(1);
+    }
+  } */
 `;
 const CardRight = styled.div`
   padding: 1% 2%;
@@ -54,27 +66,27 @@ const CardRight = styled.div`
 
 const DotLeft = styled.span`
   border: 4px solid #fdfdfd;
-  background: rgb(155, 155, 155);
+  background: #fdfdfd;
   position: absolute;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin: 0 -27.2%;
-  left: 50%;
+  right: -2.5%;
   top: 32px;
-  z-index: 2;
+  z-index: 1;
 `;
 const DotRight = styled.span`
   border: 4px solid #fdfdfd;
-  background: rgb(155, 155, 155);
+  background: #fdfdfd;
   position: absolute;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  left: -29px;
+  left: -2.5%;
   margin: 0 -20%;
   top: 32px;
-  z-index: 2;
+  z-index: 1;
 `;
 const ArrowLeft = styled.span`
   height: 0;
@@ -85,7 +97,7 @@ const ArrowLeft = styled.span`
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
   border-left: 15px solid rgba(255, 255, 255, 0.1);
-  right: -13.5%;
+  right: -8.3%;
 `;
 const ArrowRight = styled.span`
   height: 0;
@@ -96,7 +108,7 @@ const ArrowRight = styled.span`
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
   border-right: 15px solid rgba(255, 255, 255, 0.1);
-  left: -65px;
+  left: -6.7%;
 `;
 
 const Title = styled.h2``;
@@ -113,62 +125,78 @@ const TimeLine = () => {
   return (
     <Section>
       <Timeline>
-        <CardLeft data-aos="fade-left">
-          <DotLeft />
-          <ContainerData>
-            <Title>Secundaria Tecnica</Title>
-            <Date>2013 - 2018</Date>
-            <Description>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
-              consectetur ipsam! Ad, cum incidunt cumque voluptatum quibusdam
-              natus earum porro in. Veniam id nostrum praesentium, accusantium
-              odio doloribus consequuntur ratione!
-            </Description>
-            <ArrowLeft />
-          </ContainerData>
-        </CardLeft>
-        <CardRight>
-          <DotRight />
-          <ContainerData>
-            <Title>Secundaria Tecnica</Title>
-            <Date>2013 - 2018</Date>
-            <Description>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
-              consectetur ipsam! Ad, cum incidunt cumque voluptatum quibusdam
-              natus earum porro in. Veniam id nostrum praesentium, accusantium
-              odio doloribus consequuntur ratione!
-            </Description>
-            <ArrowRight />
-          </ContainerData>
-        </CardRight>
-        <CardLeft>
-          <DotLeft />
-          <ContainerData>
-            <Title>Secundaria Tecnica</Title>
-            <Date>2013 - 2018</Date>
-            <Description>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
-              consectetur ipsam! Ad, cum incidunt cumque voluptatum quibusdam
-              natus earum porro in. Veniam id nostrum praesentium, accusantium
-              odio doloribus consequuntur ratione!
-            </Description>
-            <ArrowLeft />
-          </ContainerData>
-        </CardLeft>
-        <CardRight>
-          <DotRight />
-          <ContainerData>
-            <Title>Secundaria Tecnica</Title>
-            <Date>2013 - 2018</Date>
-            <Description>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
-              consectetur ipsam! Ad, cum incidunt cumque voluptatum quibusdam
-              natus earum porro in. Veniam id nostrum praesentium, accusantium
-              odio doloribus consequuntur ratione!
-            </Description>
-            <ArrowRight />
-          </ContainerData>
-        </CardRight>
+        <Bounce left>
+          <CardLeft>
+            <Fade delay={1200}>
+              <DotLeft />
+            </Fade>
+            <ContainerData>
+              <Title>Secundaria Tecnica</Title>
+              <Date>2013 - 2018</Date>
+              <Description>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores, consectetur ipsam! Ad, cum incidunt cumque voluptatum
+                quibusdam natus earum porro in. Veniam id nostrum praesentium,
+                accusantium odio doloribus consequuntur ratione!
+              </Description>
+              <ArrowLeft />
+            </ContainerData>
+          </CardLeft>
+        </Bounce>
+        <Bounce right delay={2000}>
+          <CardRight>
+            <Fade delay={2800}>
+              <DotRight />
+            </Fade>
+            <ContainerData>
+              <Title>Secundaria Tecnica</Title>
+              <Date>2013 - 2018</Date>
+              <Description>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores, consectetur ipsam! Ad, cum incidunt cumque voluptatum
+                quibusdam natus earum porro in. Veniam id nostrum praesentium,
+                accusantium odio doloribus consequuntur ratione!
+              </Description>
+              <ArrowRight />
+            </ContainerData>
+          </CardRight>
+        </Bounce>
+        <Bounce left delay={3400}>
+          <CardLeft>
+            <Fade delay={4000}>
+              <DotLeft />
+            </Fade>
+            <ContainerData>
+              <Title>Secundaria Tecnica</Title>
+              <Date>2013 - 2018</Date>
+              <Description>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores, consectetur ipsam! Ad, cum incidunt cumque voluptatum
+                quibusdam natus earum porro in. Veniam id nostrum praesentium,
+                accusantium odio doloribus consequuntur ratione!
+              </Description>
+              <ArrowLeft />
+            </ContainerData>
+          </CardLeft>
+        </Bounce>
+        <Bounce right delay={4600}>
+          <CardRight>
+            <Fade delay={5200}>
+              <DotRight />
+            </Fade>
+            <ContainerData>
+              <Title>Secundaria Tecnica</Title>
+              <Date>2013 - 2018</Date>
+              <Description>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Maiores, consectetur ipsam! Ad, cum incidunt cumque voluptatum
+                quibusdam natus earum porro in. Veniam id nostrum praesentium,
+                accusantium odio doloribus consequuntur ratione!
+              </Description>
+              <ArrowRight />
+            </ContainerData>
+          </CardRight>
+        </Bounce>
       </Timeline>
     </Section>
   );

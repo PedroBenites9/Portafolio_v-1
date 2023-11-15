@@ -1,5 +1,9 @@
 /* eslint-disable react/no-unknown-property */
 import styled from "styled-components";
+// react-reveal animate
+import { Flip, Fade } from "react-reveal";
+// css
+import "../css/style.css";
 
 const Section = styled.div`
   height: 100vh;
@@ -111,7 +115,6 @@ const Button = styled.button`
   color: #7a7a7a;
   cursor: pointer;
   display: inline-block;
-
   font-size: 16px;
   font-weight: 600;
   line-height: normal;
@@ -119,7 +122,7 @@ const Button = styled.button`
   min-height: 60px;
   min-width: 0;
   outline: none;
-  padding: 16px 24px;
+  padding: 20px 40px;
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -128,9 +131,6 @@ const Button = styled.button`
   touch-action: manipulation;
   width: 100%;
   will-change: transform;
-  @media (min-width: 767px) {
-    width: 20%;
-  }
 
   &:hover {
     color: #fff;
@@ -151,23 +151,29 @@ const Bio = () => {
   return (
     <Section>
       <Container>
-        <Img src="./img/foto_perfil_portafolio.jpg" alt="foto_perfil" />
-        <Title>
-          <Name>Pedro Benites</Name>
-          <Description>Desarrollador Front-end</Description>
-        </Title>
-        <Icons>
-          <Instagram href="https://www.instagram.com/_.pepox/">
-            <i className="fab fa-instagram fa-3x"></i>
-          </Instagram>
-          <Linkedin href="https://www.linkedin.com/in/pedro-benites99/">
-            <i className="fab fa-linkedin fa-3x"></i>
-          </Linkedin>
-          <GitHub href="https://github.com/PedroBenites9">
-            <i className="fab fa-github fa-3x"></i>
-          </GitHub>
-        </Icons>
-        <Button className="button-6">Contactar</Button>
+        <Fade top>
+          <Img src="./img/foto_perfil_portafolio.jpg" alt="foto_perfil" />
+        </Fade>
+        <Flip top>
+          <Title>
+            <Name>Pedro Benites</Name>
+            <Description>Desarrollador Front-end</Description>
+          </Title>
+        </Flip>
+        <Fade>
+          <Icons>
+            <Instagram href="https://www.instagram.com/_.pepox/">
+              <i className="fab fa-instagram fa-3x"></i>
+            </Instagram>
+            <Linkedin href="https://www.linkedin.com/in/pedro-benites99/">
+              <i className="fab fa-linkedin fa-3x"></i>
+            </Linkedin>
+            <GitHub href="https://github.com/PedroBenites9">
+              <i className="fab fa-github fa-3x"></i>
+            </GitHub>
+          </Icons>
+          <Button>Contactar</Button>
+        </Fade>
       </Container>
     </Section>
   );
