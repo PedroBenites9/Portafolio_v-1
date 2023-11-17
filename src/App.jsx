@@ -6,6 +6,7 @@ import "./css/style.css";
 // react-reveal animate
 
 import "aos/dist/aos.css";
+import Skill from "./components/skill";
 
 const Container = styled.div`
   height: 100vh;
@@ -26,6 +27,7 @@ function App() {
   return (
     <Container>
       <Bio />
+      <Skill />
       <TimeLine />
       <Proyectos />
     </Container>

@@ -11,7 +11,7 @@ const Section = styled.div`
 const Timeline = styled.div`
   position: relative;
   max-width: 60%;
-  margin: 3% 0;
+  margin: 3% 0 6%;
   &::after {
     content: "";
     position: absolute;
@@ -62,6 +62,7 @@ const CardRight = styled.div`
   width: 50%;
   background: rgba(255, 255, 255, 0.1);
   right: -60%;
+  max-width: 40%;
 `;
 
 const DotLeft = styled.span`
@@ -72,8 +73,8 @@ const DotLeft = styled.span`
   height: 40px;
   border-radius: 50%;
   margin: 0 -27.2%;
-  right: -2.5%;
-  top: 32px;
+  left: 75%;
+  top: 4vh;
   z-index: 1;
 `;
 const DotRight = styled.span`
@@ -83,7 +84,7 @@ const DotRight = styled.span`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  left: -2.5%;
+  right: 68%;
   margin: 0 -20%;
   top: 32px;
   z-index: 1;
@@ -108,12 +109,14 @@ const ArrowRight = styled.span`
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
   border-right: 15px solid rgba(255, 255, 255, 0.1);
-  left: -6.7%;
+  left: -8.3%;
 `;
 
 const Title = styled.h2``;
 const Date = styled.small``;
-const Description = styled.p``;
+const Description = styled.p`
+  padding-top: 3%;
+`;
 const ContainerData = styled.div`
   padding: 20px 30px;
   position: relative;
@@ -126,46 +129,50 @@ const TimeLine = () => {
     <Section>
       <Timeline>
         <Bounce left>
+          <Fade delay={1200}>
+            <DotLeft />
+          </Fade>
           <CardLeft>
-            <Fade delay={1200}>
-              <DotLeft />
-            </Fade>
             <ContainerData>
               <Title>Secundaria Tecnica</Title>
               <Date>2013 - 2018</Date>
               <Description>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores, consectetur ipsam! Ad, cum incidunt cumque voluptatum
-                quibusdam natus earum porro in. Veniam id nostrum praesentium,
-                accusantium odio doloribus consequuntur ratione!
+                Me egrese como &quot;Tecnico informatico y auxiliar de
+                programación&quot; en la escuela tecnica 32° D.E 14 &quot;José
+                de San Martín&quot;. Dentro de la institucion aprendi las bases
+                sobre la composicion de las computadoras y sobre todo las bases
+                de la programacion. Mi primer lenguaje de alto nivel que aprendi
+                fue &quot;Java&quot; y desde ahi fue mi punto de partida en lo
+                que se el mundo de la programacion
               </Description>
               <ArrowLeft />
             </ContainerData>
           </CardLeft>
         </Bounce>
         <Bounce right delay={2000}>
+          <Fade delay={2800}>
+            <DotRight />
+          </Fade>
           <CardRight>
-            <Fade delay={2800}>
-              <DotRight />
-            </Fade>
             <ContainerData>
-              <Title>Secundaria Tecnica</Title>
-              <Date>2013 - 2018</Date>
+              <Title>Pasantia</Title>
+              <Date>2018</Date>
               <Description>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores, consectetur ipsam! Ad, cum incidunt cumque voluptatum
-                quibusdam natus earum porro in. Veniam id nostrum praesentium,
-                accusantium odio doloribus consequuntur ratione!
+                Realice la pasantia para el &quot;Ministerio de Espacios
+                Publicos e Higiene Urbana&quot;. Comence como consultor de
+                datos, utilizamos &quot;Power BI&quot; para poder manipular
+                dicha informacion y plasmarlo en un graficos. Luego me pasaron a
+                la area de de IA en el proyecto
               </Description>
               <ArrowRight />
             </ContainerData>
           </CardRight>
         </Bounce>
         <Bounce left delay={3400}>
+          <Fade delay={4000}>
+            <DotLeft />
+          </Fade>
           <CardLeft>
-            <Fade delay={4000}>
-              <DotLeft />
-            </Fade>
             <ContainerData>
               <Title>Secundaria Tecnica</Title>
               <Date>2013 - 2018</Date>
@@ -180,10 +187,10 @@ const TimeLine = () => {
           </CardLeft>
         </Bounce>
         <Bounce right delay={4600}>
+          <Fade delay={5200}>
+            <DotRight />
+          </Fade>
           <CardRight>
-            <Fade delay={5200}>
-              <DotRight />
-            </Fade>
             <ContainerData>
               <Title>Secundaria Tecnica</Title>
               <Date>2013 - 2018</Date>
