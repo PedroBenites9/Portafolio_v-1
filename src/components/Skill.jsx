@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Flip, Zoom } from "react-reveal";
 
 const Section = styled.div`
   height: 100%;
@@ -136,70 +137,83 @@ const Skill = () => {
   return (
     <>
       <Section>
-        <Title>Habilidades Tecnologicas</Title>
+        <Flip left>
+          <Title>Habilidades Tecnologicas</Title>
+        </Flip>
         <Contenedor>
-          <SubTitle>Desarrollo Web y Otros Lenguajes</SubTitle>
-          <ContenedorSkill>
-            <ContenedorSkillData>
-              <Image src="./img/html.png" />
-              <TitleSkill>HTML</TitleSkill>
-            </ContenedorSkillData>
-            <ContenedorSkillData>
-              <Image src="./img/Css.png" />
-              {/* arreglar size de css */}
-              <TitleSkill>CSS</TitleSkill>
-            </ContenedorSkillData>
-            <ContenedorSkillData>
-              <Image src="./img/javascript.png" />
-              <TitleSkill>JAVASCRIPT</TitleSkill>
-            </ContenedorSkillData>
-            <ContenedorSkillData>
-              <Image src="./img/java.png" />
-              <TitleSkill>JAVA</TitleSkill>
-            </ContenedorSkillData>
-          </ContenedorSkill>
+          <Zoom delay={1000}>
+            <SubTitle>Desarrollo Web y Otros Lenguajes</SubTitle>
+          </Zoom>
+          <Flip bottom delay={1500}>
+            <ContenedorSkill>
+              <ContenedorSkillData>
+                <Image src="./img/html.png" />
+                <TitleSkill>HTML</TitleSkill>
+              </ContenedorSkillData>
+              <ContenedorSkillData>
+                <Image src="./img/Css.png" />
+                <TitleSkill>CSS</TitleSkill>
+              </ContenedorSkillData>
+              <ContenedorSkillData>
+                <Image src="./img/javascript.png" />
+                <TitleSkill>JAVASCRIPT</TitleSkill>
+              </ContenedorSkillData>
+              <ContenedorSkillData>
+                <Image src="./img/java.png" />
+                <TitleSkill>JAVA</TitleSkill>
+              </ContenedorSkillData>
+            </ContenedorSkill>
+          </Flip>
         </Contenedor>
         <Contenedor>
-          <SubTitle>Librerias y Framework</SubTitle>
-          <ContenedorLF>
-            <ContenedorLFData>
-              <Image src="./img/Bootstrap_logo.png" />
-              <TitleSkill>BOOTSTRAP</TitleSkill>
-            </ContenedorLFData>
-            <ContenedorLFData>
-              <Image src="./img/React.png" />
-              <TitleSkill>REACT</TitleSkill>
-            </ContenedorLFData>
-            <ContenedorLFData>
-              <Image src="./img/aos.png" />
-              <TitleSkill>AOS</TitleSkill>
-            </ContenedorLFData>
-            <ContenedorLFData>
-              <Image src="./img/three-js-logo.png" />
-              <TitleSkill>THREE JS</TitleSkill>
-            </ContenedorLFData>
-          </ContenedorLF>
+          <Zoom delay={2000}>
+            <SubTitle>Librerias y Framework</SubTitle>
+          </Zoom>
+          <Flip bottom delay={2500}>
+            <ContenedorLF>
+              <ContenedorLFData>
+                <Image src="./img/Bootstrap_logo.png" />
+                <TitleSkill>BOOTSTRAP</TitleSkill>
+              </ContenedorLFData>
+              <ContenedorLFData>
+                <Image src="./img/React.png" />
+                <TitleSkill>REACT</TitleSkill>
+              </ContenedorLFData>
+              <ContenedorLFData>
+                <Image src="./img/aos.png" />
+                <TitleSkill>AOS</TitleSkill>
+              </ContenedorLFData>
+              <ContenedorLFData>
+                <Image src="./img/three-js-logo.png" />
+                <TitleSkill>THREE JS</TitleSkill>
+              </ContenedorLFData>
+            </ContenedorLF>
+          </Flip>
         </Contenedor>
         <Contenedor>
-          <Title>Herramientas y Programas</Title>
-          <ContenedorHyP>
-            <ContenedorHyPData>
-              <Image src="./img/Illustrator-Logo.png" />
-              <TitleSkill>Illustrator</TitleSkill>
-            </ContenedorHyPData>
-            <ContenedorHyPData>
-              <Image src="./img/Adobe_Photoshop.png" />
-              <TitleSkill>Photoshop</TitleSkill>
-            </ContenedorHyPData>
-            <ContenedorHyPData>
-              <Image src="./img/Adobe_Premiere.png" />
-              <TitleSkill>Premiere</TitleSkill>
-            </ContenedorHyPData>
-            <ContenedorHyPData>
-              <Image src="./img/M_OFFICE_.png" />
-              <TitleSkill>Office</TitleSkill>
-            </ContenedorHyPData>
-          </ContenedorHyP>
+          <Flip left delay={3000}>
+            <Title>Herramientas y Programas</Title>
+          </Flip>
+          <Flip bottom delay={3500}>
+            <ContenedorHyP>
+              <ContenedorHyPData>
+                <Image src="./img/Illustrator-Logo.png" />
+                <TitleSkill>Illustrator</TitleSkill>
+              </ContenedorHyPData>
+              <ContenedorHyPData>
+                <Image src="./img/Adobe_Photoshop.png" />
+                <TitleSkill>Photoshop</TitleSkill>
+              </ContenedorHyPData>
+              <ContenedorHyPData>
+                <Image src="./img/Adobe_Premiere.png" />
+                <TitleSkill>Premiere</TitleSkill>
+              </ContenedorHyPData>
+              <ContenedorHyPData>
+                <Image src="./img/M_OFFICE_.png" />
+                <TitleSkill>Office</TitleSkill>
+              </ContenedorHyPData>
+            </ContenedorHyP>
+          </Flip>
         </Contenedor>
       </Section>
     </>
