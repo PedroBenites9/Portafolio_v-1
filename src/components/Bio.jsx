@@ -39,7 +39,7 @@ const Title = styled.div`
 `;
 
 const Img = styled.img`
-  border-radius: 20%;
+  border-radius: 60px;
   width: 350px;
   height: 350px;
 
@@ -59,7 +59,7 @@ const Img = styled.img`
 
 const Icons = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
 `;
 const Instagram = styled.a`
   &:after {

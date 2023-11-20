@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import Skill from "./components/skill";
 
 const Container = styled.div`
+  max-width: 100%;
   height: 100vh;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;

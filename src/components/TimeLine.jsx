@@ -11,6 +11,8 @@ const Title = styled.h1`
   font-size: 3rem;
   text-align: center;
   padding-bottom: 30px;
+  text-decoration-line: underline;
+  text-shadow: 2px 2px 5px #000000;
 `;
 
 const Timeline = styled.div`
@@ -41,19 +43,23 @@ const Timeline = styled.div`
   }
 `;
 const CardLeft = styled.div`
-  padding: 5px;
+  padding: 10px;
   position: relative;
-  max-width: 70vh;
+  width: 70vh;
   height: auto;
-  background: rgba(255, 255, 255, 0.1);
-  left: -2%;
+  background: hsla(0, 0%, 100%, 0.1);
+  left: -10%;
+  border-radius: 30px;
+  box-shadow: -15px -10px 11px -1px rgba(0, 0, 0, 0.75);
 `;
 const CardRight = styled.div`
-  padding: 5px;
+  padding: 10px;
   position: relative;
   max-width: 70vh;
   background: rgba(255, 255, 255, 0.1);
   left: 60%;
+  border-radius: 30px;
+  box-shadow: 15px -10px 11px -1px rgba(0, 0, 0, 0.75);
   @media (max-width: 1600px) {
     left: 65%;
     top: -10vh;
@@ -67,8 +73,7 @@ const DotLeft = styled.span`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin: 0 -27.2%;
-  left: 75%;
+  left: 48.2%;
   top: 4vh;
   z-index: 1;
   @media (max-width: 1600px) {
@@ -82,9 +87,9 @@ const DotRight = styled.span`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  right: 68%;
+  right: 68.2%;
   margin: 0 -20%;
-  top: -5vh;
+  top: 30px;
   z-index: 1;
   @media (max-width: 1600px) {
     right: 66%;
@@ -99,7 +104,7 @@ const ArrowLeft = styled.span`
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
   border-left: 15px solid rgba(255, 255, 255, 0.1);
-  right: -8.3%;
+  right: -25px;
   @media (max-width: 1600px) {
     right: -4%;
     top: 35px;
@@ -114,7 +119,7 @@ const ArrowRight = styled.span`
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
   border-right: 15px solid rgba(255, 255, 255, 0.1);
-  left: -4%;
+  left: -25px;
   @media (max-width: 1600px) {
     left: -4%;
     top: 35px;
