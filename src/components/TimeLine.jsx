@@ -123,7 +123,7 @@ const ArrowRight = styled.span`
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
   border-right: 15px solid rgba(255, 255, 255, 0.1);
-  left: -8.3%;
+  left: -4%;
   @media (max-width: 1600px) {
     left: -4%;
     top: 35px;
