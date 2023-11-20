@@ -2,16 +2,22 @@ import styled from "styled-components";
 import { Fade, Bounce } from "react-reveal";
 
 const Section = styled.div`
-  height: 100%;
+  height: 100vh;
   scroll-snap-align: center;
-  display: flex;
-  justify-content: center;
+  padding: 2%;
+`;
+
+const Title = styled.h1`
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 30px;
 `;
 
 const Timeline = styled.div`
   position: relative;
-  max-width: 60%;
-  margin: 3% 0 6%;
+  max-width: 70vw;
+  height: 70vh;
+  margin: 2% auto 2%;
   &::after {
     content: "";
     position: absolute;
@@ -35,12 +41,12 @@ const Timeline = styled.div`
   }
 `;
 const CardLeft = styled.div`
-  padding: 1% 2%;
+  padding: 5px;
   position: relative;
   max-width: 40%;
   height: auto;
   background: rgba(255, 255, 255, 0.1);
-  left: -5%;
+  left: -2%;
   /* animation: fade-down 2s;
   &:first-child {
     margin-bottom: 15%;
@@ -57,7 +63,7 @@ const CardLeft = styled.div`
   } */
 `;
 const CardRight = styled.div`
-  padding: 1% 2%;
+  padding: 5px;
   position: relative;
   width: 50%;
   background: rgba(255, 255, 255, 0.1);
@@ -112,13 +118,15 @@ const ArrowRight = styled.span`
   left: -8.3%;
 `;
 
-const Title = styled.h2``;
+const TitleData = styled.h2`
+  font-size: 2rem;
+`;
 const Date = styled.small``;
 const Description = styled.p`
-  padding-top: 3%;
+  padding-top: 2%;
 `;
 const ContainerData = styled.div`
-  padding: 20px 30px;
+  padding: 10px 15px;
   position: relative;
   border-radius: 6px;
   font-size: 15px;
@@ -127,6 +135,7 @@ const ContainerData = styled.div`
 const TimeLine = () => {
   return (
     <Section>
+      <Title>Linea de tiempo</Title>
       <Timeline>
         <Bounce left>
           <Fade delay={1200}>
@@ -134,7 +143,7 @@ const TimeLine = () => {
           </Fade>
           <CardLeft>
             <ContainerData>
-              <Title>Secundaria Tecnica</Title>
+              <TitleData>Secundaria Tecnica</TitleData>
               <Date>2013 - 2018</Date>
               <Description>
                 Me egrese como &quot;Tecnico informatico y auxiliar de
@@ -155,7 +164,7 @@ const TimeLine = () => {
           </Fade>
           <CardRight>
             <ContainerData>
-              <Title>Pasantia</Title>
+              <TitleData>Pasantia</TitleData>
               <Date>2018</Date>
               <Description>
                 Realice la pasantia para el &quot;Ministerio de Espacios
@@ -174,7 +183,7 @@ const TimeLine = () => {
           </Fade>
           <CardLeft>
             <ContainerData>
-              <Title>Secundaria Tecnica</Title>
+              <TitleData>Secundaria Tecnica</TitleData>
               <Date>2013 - 2018</Date>
               <Description>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -192,7 +201,7 @@ const TimeLine = () => {
           </Fade>
           <CardRight>
             <ContainerData>
-              <Title>Secundaria Tecnica</Title>
+              <TitleData>Secundaria Tecnica</TitleData>
               <Date>2013 - 2018</Date>
               <Description>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
