@@ -43,32 +43,21 @@ const Timeline = styled.div`
 const CardLeft = styled.div`
   padding: 5px;
   position: relative;
-  max-width: 40%;
+  max-width: 70vh;
   height: auto;
   background: rgba(255, 255, 255, 0.1);
   left: -2%;
-  /* animation: fade-down 2s;
-  &:first-child {
-    margin-bottom: 15%;
-  }
-  @keyframes fade-down {
-    0% {
-      opacity: 0;
-      transform: traslateY(-30px) scale(0.9);
-    }
-    100% {
-      opacity: 1;
-      transform: traslateY(0) scale(1);
-    }
-  } */
 `;
 const CardRight = styled.div`
   padding: 5px;
   position: relative;
-  width: 50%;
+  max-width: 70vh;
   background: rgba(255, 255, 255, 0.1);
-  right: -60%;
-  max-width: 40%;
+  left: 60%;
+  @media (max-width: 1600px) {
+    left: 65%;
+    top: -10vh;
+  }
 `;
 
 const DotLeft = styled.span`
@@ -82,6 +71,9 @@ const DotLeft = styled.span`
   left: 75%;
   top: 4vh;
   z-index: 1;
+  @media (max-width: 1600px) {
+    left: 73%;
+  }
 `;
 const DotRight = styled.span`
   border: 4px solid #fdfdfd;
@@ -92,8 +84,11 @@ const DotRight = styled.span`
   border-radius: 50%;
   right: 68%;
   margin: 0 -20%;
-  top: 32px;
+  top: -5vh;
   z-index: 1;
+  @media (max-width: 1600px) {
+    right: 66%;
+  }
 `;
 const ArrowLeft = styled.span`
   height: 0;
@@ -105,6 +100,10 @@ const ArrowLeft = styled.span`
   border-top: 15px solid transparent;
   border-left: 15px solid rgba(255, 255, 255, 0.1);
   right: -8.3%;
+  @media (max-width: 1600px) {
+    right: -4%;
+    top: 35px;
+  }
 `;
 const ArrowRight = styled.span`
   height: 0;
@@ -115,7 +114,11 @@ const ArrowRight = styled.span`
   border-bottom: 15px solid transparent;
   border-top: 15px solid transparent;
   border-right: 15px solid rgba(255, 255, 255, 0.1);
-  left: -8.3%;
+  left: -4%;
+  @media (max-width: 1600px) {
+    left: -4%;
+    top: 35px;
+  }
 `;
 
 const TitleData = styled.h2`
@@ -149,10 +152,8 @@ const TimeLine = () => {
                 Me egrese como &quot;Tecnico informatico y auxiliar de
                 programación&quot; en la escuela tecnica 32° D.E 14 &quot;José
                 de San Martín&quot;. Dentro de la institucion aprendi las bases
-                sobre la composicion de las computadoras y sobre todo las bases
-                de la programacion. Mi primer lenguaje de alto nivel que aprendi
-                fue &quot;Java&quot; y desde ahi fue mi punto de partida en lo
-                que se el mundo de la programacion
+                de la programacion y a la vez realice las practicas
+                profecionalizantes
               </Description>
               <ArrowLeft />
             </ContainerData>
