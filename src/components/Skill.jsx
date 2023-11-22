@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Flip, Zoom } from "react-reveal";
 
 const Section = styled.div`
-  height: 100%;
+  height: 100vh;
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
@@ -138,7 +138,7 @@ const Skill = () => {
     <>
       <Section>
         <Flip left>
-          <Title>Habilidades Tecnologicas</Title>
+          <Title>MIS CONOCIMIENTOS TECNOLOGICOS</Title>
         </Flip>
         <Contenedor>
           <Zoom delay={1000}>
@@ -192,25 +192,25 @@ const Skill = () => {
         </Contenedor>
         <Contenedor>
           <Flip left delay={3000}>
-            <Title>Herramientas y Programas</Title>
+            <Title>HERRAMIENTAS Y PROGRAMAS</Title>
           </Flip>
           <Flip bottom delay={3500}>
             <ContenedorHyP>
               <ContenedorHyPData>
                 <Image src="./img/Illustrator-Logo.png" />
-                <TitleSkill>Illustrator</TitleSkill>
+                <TitleSkill>ILLUSTRATOR</TitleSkill>
               </ContenedorHyPData>
               <ContenedorHyPData>
                 <Image src="./img/Adobe_Photoshop.png" />
-                <TitleSkill>Photoshop</TitleSkill>
+                <TitleSkill>PHOTOSHOP</TitleSkill>
               </ContenedorHyPData>
               <ContenedorHyPData>
                 <Image src="./img/Adobe_Premiere.png" />
-                <TitleSkill>Premiere</TitleSkill>
+                <TitleSkill>PREMIERE</TitleSkill>
               </ContenedorHyPData>
               <ContenedorHyPData>
                 <Image src="./img/M_OFFICE_.png" />
-                <TitleSkill>Office</TitleSkill>
+                <TitleSkill>OFFICE</TitleSkill>
               </ContenedorHyPData>
             </ContenedorHyP>
           </Flip>
