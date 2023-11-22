@@ -1,4 +1,4 @@
-a {
+.socialMedia {
     color: white;
     display: flex;
     text-decoration: none;
@@ -16,9 +16,6 @@ a {
 .fab {
     z-index: 10;
 }
-
-
-
 
 /* CSS */
 .button-28 {
@@ -47,8 +44,6 @@ a {
     touch-action: manipulation;
     width: 20%;
     will-change: transform;
-
-
 }
 
 .button-28:disabled {

@@ -162,13 +162,22 @@ const Bio = () => {
         </Flip>
         <Fade>
           <Icons>
-            <Instagram href="https://www.instagram.com/_.pepox/">
+            <Instagram
+              href="https://www.instagram.com/_.pepox/"
+              className="socialMedia"
+            >
               <i className="fab fa-instagram fa-3x"></i>
             </Instagram>
-            <Linkedin href="https://www.linkedin.com/in/pedro-benites99/">
-              <i className="fab fa-linkedin fa-3x"></i>
+            <Linkedin
+              href="https://www.linkedin.com/in/pedro-benites99/"
+              className="socialMedia"
+            >
+              <i className="fab fa-linkedin fa-3x "></i>
             </Linkedin>
-            <GitHub href="https://github.com/PedroBenites9">
+            <GitHub
+              href="https://github.com/PedroBenites9"
+              className="socialMedia"
+            >
               <i className="fab fa-github fa-3x"></i>
             </GitHub>
           </Icons>

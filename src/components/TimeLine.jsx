@@ -50,7 +50,7 @@ const CardLeft = styled.div`
   background: hsla(0, 0%, 100%, 0.1);
   left: -10%;
   border-radius: 30px;
-  box-shadow: -15px -10px 11px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px -5px 11px -1px rgba(0, 0, 0, 0.75);
 `;
 const CardRight = styled.div`
   padding: 10px;
@@ -59,7 +59,7 @@ const CardRight = styled.div`
   background: rgba(255, 255, 255, 0.1);
   left: 60%;
   border-radius: 30px;
-  box-shadow: 15px -10px 11px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px -5px 11px -1px rgba(0, 0, 0, 0.75);
   @media (max-width: 1600px) {
     left: 65%;
     top: -10vh;
@@ -129,7 +129,9 @@ const ArrowRight = styled.span`
 const TitleData = styled.h2`
   font-size: 2rem;
 `;
-const Date = styled.small``;
+const Date = styled.small`
+  font-size: 20px;
+`;
 const Description = styled.p`
   padding-top: 2%;
 `;
@@ -170,14 +172,14 @@ const TimeLine = () => {
           </Fade>
           <CardRight>
             <ContainerData>
-              <TitleData>Pasantia</TitleData>
+              <TitleData>Practicas</TitleData>
               <Date>2018</Date>
               <Description>
-                Realice la pasantia para el &quot;Ministerio de Espacios
+                Realice mis practicas para el &quot;Ministerio de Espacios
                 Publicos e Higiene Urbana&quot;. Comence como consultor de
-                datos, utilizamos &quot;Power BI&quot; para poder manipular
-                dicha informacion y plasmarlo en un graficos. Luego me pasaron a
-                la area de de IA en el proyecto
+                datos, utilizando &quot;Power BI&quot; para poder manipular
+                dicha informacion y plasmarlo en un graficos. Luego me
+                transfirieron al desarrollo de IA con Python.
               </Description>
               <ArrowRight />
             </ContainerData>
@@ -189,13 +191,16 @@ const TimeLine = () => {
           </Fade>
           <CardLeft>
             <ContainerData>
-              <TitleData>Secundaria Tecnica</TitleData>
-              <Date>2013 - 2018</Date>
+              <TitleData>Desarrollador web</TitleData>
+              <Date>2021 - 2023</Date>
               <Description>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores, consectetur ipsam! Ad, cum incidunt cumque voluptatum
-                quibusdam natus earum porro in. Veniam id nostrum praesentium,
-                accusantium odio doloribus consequuntur ratione!
+                Inicie aprendiendo de forma autodidacta, viendo muchos videos de
+                &quot;YouTube&quot;, leyendo muchos foros y haciendo a la par
+                cursos en &quot;Udemy&quot;. En 2022 retome el camino realizando
+                el curso de desarrollo web y React de CoderHouse, fortaleciendo
+                las bases para un diseño de pagina ahora implementando
+                JavaScript. Poco a poco utilizaba diversas liberias para darle
+                dinamismo a mis paginas.
               </Description>
               <ArrowLeft />
             </ContainerData>
@@ -207,13 +212,12 @@ const TimeLine = () => {
           </Fade>
           <CardRight>
             <ContainerData>
-              <TitleData>Secundaria Tecnica</TitleData>
-              <Date>2013 - 2018</Date>
+              <TitleData>DesarrolladorFront-end</TitleData>
+              <Date>2023-actual</Date>
               <Description>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Maiores, consectetur ipsam! Ad, cum incidunt cumque voluptatum
-                quibusdam natus earum porro in. Veniam id nostrum praesentium,
-                accusantium odio doloribus consequuntur ratione!
+                Hasta la fecha sigo aprendiendo, y realizando paginas con React.
+                Participe en varios proyectos como freelancer, creando paginas
+                estaticas y en algunas ocaciones dinamicas de estilo web shop
               </Description>
               <ArrowRight />
             </ContainerData>

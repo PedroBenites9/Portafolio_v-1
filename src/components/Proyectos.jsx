@@ -60,7 +60,7 @@ const ContenedorCard = styled.div`
   justify-content: center;
 `;
 const Github = styled.img`
-  width: 10%;
+  width: 100%;
   height: auto;
 `;
 const Button = styled.button`
@@ -95,6 +95,12 @@ const CardLogo = styled.div`
   gap: 30px;
   margin: 10px 0;
 `;
+const Click = styled.a`
+  width: 15%;
+  &:hover {
+  }
+`;
+
 const Proyectos = () => {
   return (
     <Section>
@@ -114,7 +120,9 @@ const Proyectos = () => {
                   desarrollo web en &quot;CoderHouse&quot;{" "}
                 </CardDescription>
                 <CardLogo>
-                  <Github src="./img/GitHub.svg" />
+                  <Click href="./">
+                    <Github src="./img/GitHub.svg" />
+                  </Click>
                   <Button>Ver</Button>
                 </CardLogo>
               </CardInfo>
@@ -128,7 +136,9 @@ const Proyectos = () => {
                   desarrollo web en &quot;CoderHouse&quot;{" "}
                 </CardDescription>
                 <CardLogo>
-                  <Github src="./img/GitHub.svg" />
+                  <Click href="./">
+                    <Github src="./img/GitHub.svg" />
+                  </Click>
                   <Button>Ver</Button>
                 </CardLogo>
               </CardInfo>
@@ -142,7 +152,9 @@ const Proyectos = () => {
                   desarrollo web en &quot;CoderHouse&quot;{" "}
                 </CardDescription>
                 <CardLogo>
-                  <Github src="./img/GitHub.svg" />
+                  <Click href="./">
+                    <Github src="./img/GitHub.svg" />
+                  </Click>
                   <Button>Ver</Button>
                 </CardLogo>
               </CardInfo>
