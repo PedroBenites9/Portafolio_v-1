@@ -1,3 +1,5 @@
+import { Stage } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 import styled from "styled-components";
 
 const Section = styled.div`
@@ -10,7 +12,11 @@ const ContenedorAboutMe = styled.div``;
 const AboutMe = () => {
   return (
     <Section>
-      <ContenedorAboutMe></ContenedorAboutMe>
+      <ContenedorAboutMe>
+        <Canvas>
+          <Stage environment={"city"} intensity={0.1}></Stage>
+        </Canvas>
+      </ContenedorAboutMe>
     </Section>
   );
 };
