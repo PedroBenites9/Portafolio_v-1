@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import { OrbitControls, PerspectiveCamera, Stage } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import Mateshorugua from "./MateUruguasho2";
+import Mateshorugua from "../models/MateUruguasho2";
 import styled from "styled-components";
 
 const Container = styled.div`
