@@ -12,7 +12,7 @@ const ModelJavaScript = () => {
     <Container>
       <Canvas>
         <OrbitControls enableZoom={false} autoRotate={true} />
-        <PerspectiveCamera makeDefault position={[4, 1, 2]} />
+        <PerspectiveCamera makeDefault position={[10, 10, 3]} />
         <Stage environment={"sunset"} intensity={0.1}>
           <JavaScript scale={0.05} position={[1, 10, 0]} />
         </Stage>
