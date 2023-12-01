@@ -1,42 +1,48 @@
 /* eslint-disable react/no-unknown-property */
 import styled from "styled-components";
 import ModelComputer from "./ModelComputer";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 const Section = styled.div`
-  height: 100vh;
-  width: 100%;
-  scroll-snap-align: center;
   display: flex;
+  height: 100vh;
+  scroll-snap-align: center;
 `;
 
 const Contenedor = styled.div`
   display: flex;
-  flex-flow: nowrap column;
-  margin: 0 auto;
+  flex-flow: nowrap row;
   justify-content: center;
   align-items: center;
+  gap: 50px;
 `;
 
-const Tarjetas = styled.div`
-  display: flex;
-  width: 70%;
-  height: auto;
-  /* background-color: #161616; */
+const ContenedorModel = styled.div`
+  height: 100%;
+  width: 100%;
 `;
 
-const BioMe = styled.div`
+const ContenedorBio = styled.div`
   /* border: 10px solid #3d3d3d; */
-  width: 50%;
-  padding: 20px;
+  align-items: center;
+  background-color: #1d1d1d;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  padding: 0 100px;
 `;
 
 const Title = styled.h1`
-  background: linear-gradient(90deg, #fc4b2c 0%, #3700ff 25%);
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 60px;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  text-align: center;
 `;
+
 const SubTitle = styled.h3`
   text-align: center;
   font-size: 1.5rem;
@@ -48,12 +54,8 @@ const Text = styled.p`
   width: 80%;
   margin: 0 auto;
 `;
-const SpherePurple = styled.div`
-  width: 50%;
-  height: 100%;
-`;
 
-const Links = styled.div`
+const ContenedorLinks = styled.div`
   display: flex;
   flex-flow: column nowrap;
   gap: 30px;
@@ -66,51 +68,69 @@ const Redes = styled.div`
   gap: 20px;
 `;
 const Boton = styled.button``;
-const Instagram = styled.a``;
-const Linkedin = styled.a``;
-const Github = styled.a``;
-const Image = styled.img`
-  width: 80px;
+const Selfie = styled.img`
+  width: 250px;
   height: auto;
+`;
+
+const Enlace = styled.a`
+  color: #616161;
+  font-size: 5rem;
+`;
+
+const FirstRow = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 50px;
 `;
 
 const AboutMe = () => {
   return (
     <Section>
       <Contenedor>
-        <Tarjetas>
-          <BioMe>
-            <Title>Sobre mi</Title>
-            <SubTitle>Como sabran, mi nombre es Pedro Benites.</SubTitle>
+        <ContenedorBio>
+          <FontAwesomeIcon
+            icon={faCircleInfo}
+            size="2xl"
+            style={{
+              color: "#0b63e6",
+              "margin-top": "50px",
+            }}
+          />
+          <Title>Sobre mi</Title>
+          <SubTitle>Asi es, mi nombre es Pedro Benites.</SubTitle>
+          <FirstRow>
+            <Selfie src="./img/selfiesnipe.jpg" />
             <Text>
               Soy un desarrollador web, y uno de mis objetivos es ser
               desarrollador Fron-End. Uno de mis pasatiempos son los
               videojuegos, en especial juegos shooters. Por otro lado, me gusta
               desarrollar diversos diseños para paginas web. Siempre ando
-              probando nuevos diseños que miro por pinterest y trato de poder
-              implementar otras cosas, esto me ayuda no solo sacar ideas
-              distintas, sino que me ayuda a fortalecer mis tecnicas y
-              aprendizaje sobre el desarrollo web.
+              probando nuevos estilos que hay en pinterest para luego poder
+              implementar y practiar a la hora de hacer diseño web. Esto me
+              ayuda no solo sacar ideas distintas, sino que me ayuda a
+              fortalecer mis tecnicas y aprendizaje.
             </Text>
-          </BioMe>
-          <SpherePurple>
-            <ModelComputer />
-          </SpherePurple>
-        </Tarjetas>
-        <Links>
-          <Boton>Mi CV</Boton>
-          <Redes>
-            <Instagram href="/#">
-              <Image src="./public/img/social/ig.png" alt="ig" />
-            </Instagram>
-            <Linkedin href="/#">
-              <Image src="./public/img/social/ln.png" alt="linkedin" />
-            </Linkedin>
-            <Github href="/#">
-              <Image src="./public/img/social/git.png" alt="git" />
-            </Github>
-          </Redes>
-        </Links>
+          </FirstRow>
+
+          <ContenedorLinks>
+            <Boton>Mi CV</Boton>
+            <Redes>
+              <Enlace href="/#">
+                <FontAwesomeIcon icon={faInstagram} />
+              </Enlace>
+              <Enlace href="/#">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </Enlace>
+              <Enlace href="/#">
+                <FontAwesomeIcon icon={faGithub} />
+              </Enlace>
+            </Redes>
+          </ContenedorLinks>
+        </ContenedorBio>
+        <ContenedorModel>
+          <ModelComputer />
+        </ContenedorModel>
       </Contenedor>
     </Section>
   );
