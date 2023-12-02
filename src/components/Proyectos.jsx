@@ -55,7 +55,6 @@ const ContenedorCard = styled.div`
   display: flex;
   flex-flow: row wrap;
   gap: 30px;
-  margin: 20px;
   align-items: center;
   justify-content: center;
 `;

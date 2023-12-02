@@ -23,14 +23,22 @@ const Container = styled.div`
   color: white;
 `;
 
+const Background = styled.div`
+  background-color: #2e2e2e37;
+  width: 80%;
+  margin: 0 auto;
+`;
+
 function App() {
   return (
     <Container>
       <Bio />
-      <Skill />
-      <TimeLine />
-      <Proyectos />
-      <AboutMe />
+      <Background>
+        <Skill />
+        <TimeLine />
+        <Proyectos />
+        <AboutMe />
+      </Background>
     </Container>
   );
 }

@@ -66,6 +66,7 @@ const Img = styled.img`
 const Icons = styled.div`
   display: flex;
   gap: 3rem;
+  font-size: 3rem;
 `;
 const Instagram = styled.a`
   &:after {
