@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import ModelChair from "./ModelChair";
 const Section = styled.div`
   height: 100vh;
   width: 100%;
@@ -10,7 +10,9 @@ const ContenedorAboutMe = styled.div``;
 const AboutMe = () => {
   return (
     <Section>
-      <ContenedorAboutMe></ContenedorAboutMe>
+      <ContenedorAboutMe>
+        <ModelChair />
+      </ContenedorAboutMe>
     </Section>
   );
 };

@@ -6,6 +6,7 @@ import styled from "styled-components";
 
 import "aos/dist/aos.css";
 import Skill from "./components/skill";
+import AboutMe from "./components/AboutMe";
 
 const Container = styled.div`
   max-width: 100%;
@@ -30,6 +31,7 @@ function App() {
       <Skill />
       <TimeLine />
       <Proyectos />
+      <AboutMe />
     </Container>
   );
 }
