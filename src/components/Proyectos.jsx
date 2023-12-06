@@ -1,22 +1,31 @@
 import styled from "styled-components";
 import Model3d from "./Model3d";
+import { element } from "prop-types";
 
 const Section = styled.div`
   height: 100vh;
   width: 100%;
   scroll-snap-align: center;
+  display: flex;
+  flex-flow: column nowrap;
 `;
 const ContenedorModel = styled.div`
-  height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
   width: 25vw;
   margin: 0 10px;
 `;
 
 const ContenedorMain = styled.div`
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   width: 90%;
+  height: 100vh;
   margin: 0 auto;
+  justify-content: start;
+  padding-top: 50px;
+  align-items: center;
+  gap: 50px;
 `;
 const Title = styled.h1``;
 
@@ -31,7 +40,7 @@ const ContenedorProyectos = styled.div`
 const Card = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  width: 30%;
+  width: 20vw;
   height: 100%;
   background-color: #525252;
   border-radius: 20px;
@@ -45,6 +54,8 @@ const CardTitle = styled.h3``;
 const CardImg = styled.img`
   margin: 20px;
   border-radius: 20px;
+  height: 100%;
+  object-fit: cover;
 `;
 const CardDescription = styled.p``;
 
@@ -62,7 +73,7 @@ const Github = styled.img`
   width: 100%;
   height: auto;
 `;
-const Button = styled.button`
+const Button = styled.a`
   background-color: #303030;
   display: inline-block;
   padding: 10px 30px;
@@ -96,19 +107,21 @@ const CardLogo = styled.div`
 `;
 const Click = styled.a`
   width: 15%;
-  &:hover {
-  }
 `;
 
 const Proyectos = () => {
+  const really = () => {
+    alert("Encerio? :/");
+  };
+
   return (
     <Section>
       <ContenedorMain>
         <ContenedorModel>
           <Model3d />
+          <Title>Proyectos</Title>
         </ContenedorModel>
         <ContenedorProyectos>
-          <Title>Proyectos</Title>
           <ContenedorCard>
             <Card>
               <CardImg src="./img/fondoMuseo.jpg" alt="imgProyect" />
@@ -119,15 +132,17 @@ const Proyectos = () => {
                   desarrollo web en &quot;CoderHouse&quot;{" "}
                 </CardDescription>
                 <CardLogo>
-                  <Click href="./">
+                  <Click href="https://github.com/PedroBenites9/estacionOceanica-pedroBenites">
                     <Github src="./img/GitHub.svg" />
                   </Click>
-                  <Button>Ver</Button>
+                  <Button href="https://pedrobenites9.github.io/estacionOceanica-pedroBenites/">
+                    Ver
+                  </Button>
                 </CardLogo>
               </CardInfo>
             </Card>
             <Card>
-              <CardImg src="./img/fondoMuseo.jpg" alt="imgProyect" />
+              <CardImg src="./img/Screenshot_portafolio.png" alt="imgProyect" />
               <CardInfo>
                 <CardTitle>Estacion Oceanica</CardTitle>
                 <CardDescription>
@@ -135,10 +150,10 @@ const Proyectos = () => {
                   desarrollo web en &quot;CoderHouse&quot;{" "}
                 </CardDescription>
                 <CardLogo>
-                  <Click href="./">
+                  <Click href="https://github.com/PedroBenites9/Portafolio_v-1">
                     <Github src="./img/GitHub.svg" />
                   </Click>
-                  <Button>Ver</Button>
+                  <Button onClick={really}>Ver</Button>
                 </CardLogo>
               </CardInfo>
             </Card>

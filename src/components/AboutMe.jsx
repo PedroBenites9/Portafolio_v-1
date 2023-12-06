@@ -160,6 +160,13 @@ const Boton = styled.button`
 const Enlace = styled.a`
   color: #616161;
   font-size: 3rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #161616;
+    transition: all 0.5s;
+  }
 `;
 
 const AboutMe = () => {
@@ -243,7 +250,7 @@ const AboutMe = () => {
               </Boton>
               <Redes>
                 <Enlace href="/#">
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <FontAwesomeIcon icon={faInstagram} style={{}} />
                 </Enlace>
                 <Enlace href="/#">
                   <FontAwesomeIcon icon={faLinkedin} />

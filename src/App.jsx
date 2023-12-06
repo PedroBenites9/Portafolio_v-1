@@ -1,11 +1,12 @@
-import Bio from "./components/Bio";
-import Proyectos from "./components/Proyectos";
-import TimeLine from "./components/TimeLine";
+import { lazy, Suspense } from "react";
 import styled from "styled-components";
-
 // react-reveal animate
-import Skill from "./components/skill";
-import AboutMe from "./components/AboutMe";
+
+const Biografia = lazy(() => import("./components/Bio"));
+const Proyectos = lazy(() => import("./components/Proyectos"));
+const TimeLine = lazy(() => import("./components/TimeLine"));
+const Skill = lazy(() => import("./components/Skill"));
+const AboutMe = lazy(() => import("./components/AboutMe"));
 
 const Container = styled.div`
   max-width: 100%;
@@ -32,12 +33,16 @@ const Background = styled.div`
 function App() {
   return (
     <Container>
-      <Bio />
+      <Biografia />
       <Background>
         <Skill />
         <TimeLine />
-        <Proyectos />
-        <AboutMe />
+        <Suspense
+          fallback={<h1 style={{ textAlign: "center" }}>Cargando...</h1>}
+        >
+          <Proyectos />
+          <AboutMe />
+        </Suspense>
       </Background>
     </Container>
   );
