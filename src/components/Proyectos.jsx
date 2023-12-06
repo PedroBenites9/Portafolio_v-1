@@ -54,14 +54,20 @@ const CardTitle = styled.h3``;
 const CardImg = styled.img`
   margin: 20px;
   border-radius: 20px;
-  height: 100%;
+  min-height: 250px;
   object-fit: cover;
 `;
 const CardDescription = styled.p``;
 
 const CardInfo = styled.div`
   padding: 10px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 `;
+
 const ContenedorCard = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -69,10 +75,12 @@ const ContenedorCard = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
 const Github = styled.img`
   width: 100%;
   height: auto;
 `;
+
 const Button = styled.a`
   background-color: #303030;
   display: inline-block;
@@ -97,6 +105,7 @@ const Button = styled.a`
     top: 1px;
   }
 `;
+
 const CardLogo = styled.div`
   display: flex;
   flex-flow: row nowrap;
@@ -144,10 +153,11 @@ const Proyectos = () => {
             <Card>
               <CardImg src="./img/Screenshot_portafolio.png" alt="imgProyect" />
               <CardInfo>
-                <CardTitle>Estacion Oceanica</CardTitle>
+                <CardTitle>Portafolio</CardTitle>
                 <CardDescription>
-                  Mi proyecto realizado en 2022 mientras realizaba la cursada de
-                  desarrollo web en &quot;CoderHouse&quot;{" "}
+                  Este es uno de los tantos portafolios que habre hecho. No creo
+                  que sea el prototipo final. Pero es lo mas presentable que
+                  tengo hasta ahora jaja
                 </CardDescription>
                 <CardLogo>
                   <Click href="https://github.com/PedroBenites9/Portafolio_v-1">
