@@ -20,6 +20,9 @@ import {
   faGamepad,
   faMusic,
 } from "@fortawesome/free-solid-svg-icons";
+
+import cv from "../../public/documents/CVPedro-Programacion.pdf";
+
 const Section = styled.div`
   display: flex;
   height: 100vh;
@@ -130,7 +133,7 @@ const Redes = styled.div`
   gap: 20px;
 `;
 
-const Boton = styled.button`
+const Boton = styled.a`
   background-color: rgba(68, 68, 68, 0.5);
   border-radius: 8px;
   border-width: 0;
@@ -245,7 +248,10 @@ const AboutMe = () => {
               </TarjetaIcon>
             </ContenedorOscio>
             <ContenedorLinks>
-              <Boton>
+              <Boton
+                href="../../public/documents/CVPedro-Programacion.pdf"
+                download={"CV-PedroBenites"}
+              >
                 Mi CV <FontAwesomeIcon icon={faDownload} />
               </Boton>
               <Redes>
