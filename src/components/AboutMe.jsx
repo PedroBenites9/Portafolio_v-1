@@ -97,6 +97,7 @@ const SecondRow = styled.div`
 
 const TextSR = styled.h2`
   grid-area: 1 / 1 / 2 / 2;
+  text-align: center;
 `;
 
 const ContenedorOscio = styled.div`
@@ -178,7 +179,7 @@ const AboutMe = () => {
             icon={faCircleInfo}
             size="2xl"
             style={{
-              color: "#0b63e6",
+              color: "#c7c7c7",
               "margin-top": "50px",
             }}
           />
@@ -193,19 +194,18 @@ const AboutMe = () => {
                 Uno de mis pasatiempos son los videojuegos, en especial los
                 juegos shooters. Soy hincha de Boca Juniors. Me gusta el futbol
                 y a la vez debatir temas relacionados al deporte. Otros de mis
-                pasatiempos es la lectura. Desde muy pequeño mis padres me
-                inculcaron a la lectura y hasta la fecha poseo una
-                minibiblioteca. Unos de mis hobbies es la perfumería. Poseo una
-                Colección de perfumes de diseñador y de marca nacional. Descubrí
-                mi gusto hacia los perfumes en plena pandemia cuando contraje él
-                virus y no pude oler nada, desde ese entonces siento un placer
-                enorme poder sentir los distintos aromas que ofrece los
-                perfumes.
+                pasatiempos es la lectura. Me gusta mucho la lectura y hasta la
+                fecha poseo una minibiblioteca. Unos de mis hobbies es la
+                perfumería. Poseo una colección de perfumes de diseñador y de
+                marca nacional, descubrí mi gusto hacia los perfumes en plena
+                pandemia cuando contraje él virus y no pude oler nada, desde ese
+                entonces siento un placer enorme poder sentir los distintos
+                aromas que ofrece los perfumes.
               </Text>
             </ContenedorText>
           </FirstRow>
           <SecondRow>
-            <TextSR>Lo que más me gusta</TextSR>
+            <TextSR>i ❤️</TextSR>
             <ContenedorOscio>
               <TarjetaIcon>
                 <FontAwesomeIcon icon={faGamepad} />

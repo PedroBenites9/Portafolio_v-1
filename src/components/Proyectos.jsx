@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Model3d from "./Model3d";
-import { element } from "prop-types";
 
 const Section = styled.div`
   height: 100vh;
@@ -122,7 +121,6 @@ const Proyectos = () => {
   const really = () => {
     alert("Encerio? :/");
   };
-
   return (
     <Section>
       <ContenedorMain>
