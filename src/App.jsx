@@ -25,7 +25,7 @@ const Container = styled.div`
 `;
 
 const Background = styled.div`
-  background-color: #2e2e2e37;
+  background-color: #20202037;
   width: 80%;
   margin: 0 auto;
 `;

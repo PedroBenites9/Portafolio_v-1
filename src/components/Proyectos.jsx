@@ -135,8 +135,8 @@ const Proyectos = () => {
               <CardInfo>
                 <CardTitle>Estacion Oceanica</CardTitle>
                 <CardDescription>
-                  Mi proyecto realizado en 2022 mientras realizaba la cursada de
-                  desarrollo web en &quot;CoderHouse&quot;{" "}
+                  Mi primer proyecto realizado en 2022 mientras realizaba la
+                  cursada de desarrollo web en &quot;CoderHouse&quot;{" "}
                 </CardDescription>
                 <CardLogo>
                   <Click href="https://github.com/PedroBenites9/estacionOceanica-pedroBenites">
@@ -153,9 +153,8 @@ const Proyectos = () => {
               <CardInfo>
                 <CardTitle>Portafolio</CardTitle>
                 <CardDescription>
-                  Este es uno de los tantos portafolios que habre hecho. No creo
-                  que sea el prototipo final. Pero es lo mas presentable que
-                  tengo hasta ahora jaja
+                  Este es uno de los tantos portafolios que realice. Lo estas
+                  viendo en estos momentos.
                 </CardDescription>
                 <CardLogo>
                   <Click href="https://github.com/PedroBenites9/Portafolio_v-1">
@@ -166,13 +165,10 @@ const Proyectos = () => {
               </CardInfo>
             </Card>
             <Card>
-              <CardImg src="./img/fondoMuseo.jpg" alt="imgProyect" />
+              <CardImg src="./img/dawn.PNG" alt="imgProyect" />
               <CardInfo>
-                <CardTitle>Estacion Oceanica</CardTitle>
-                <CardDescription>
-                  Mi proyecto realizado en 2022 mientras realizaba la cursada de
-                  desarrollo web en &quot;CoderHouse&quot;{" "}
-                </CardDescription>
+                <CardTitle>Dawn</CardTitle>
+                <CardDescription>Una web shopify</CardDescription>
                 <CardLogo>
                   <Click href="./">
                     <Github src="./img/GitHub.svg" />

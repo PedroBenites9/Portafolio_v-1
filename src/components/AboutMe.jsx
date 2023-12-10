@@ -21,8 +21,6 @@ import {
   faMusic,
 } from "@fortawesome/free-solid-svg-icons";
 
-import cv from "../../public/documents/CVPedro-Programacion.pdf";
-
 const Section = styled.div`
   display: flex;
   height: 100vh;
@@ -45,7 +43,7 @@ const ContenedorModel = styled.div`
 `;
 const ContenedorBio = styled.div`
   /* border: 10px solid #3d3d3d; */
-  background-color: #1d1d1d;
+  /* background-color: #1d1d1d; */
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
