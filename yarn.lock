@@ -478,6 +478,7 @@
     tslib "^1.9.3"
 
 "@heroku-cli/command-v9@npm:@heroku-cli/command@^9.0.2", "@heroku-cli/command@^9.0.2":
+  name "@heroku-cli/command-v9"
   version "9.0.2"
   resolved "https://registry.yarnpkg.com/@heroku-cli/command/-/command-9.0.2.tgz#2e0d454fd60bde395c05872335b62b654cc640e7"
   integrity sha512-Qdm3gPfl0SAjKnQk8GVrjwDAzyv9bo1zxvIOW5OAWRsgC4xP0vjsxKv14I/SF715dM0sN14Llpxv0kmzYglkZA==
@@ -900,6 +901,7 @@
     tslib "^2.6.1"
 
 "@oclif/core-v1@npm:@oclif/core@^1.26.2", "@oclif/core@1.26.2", "@oclif/core@^1.1.1", "@oclif/core@^1.2.0", "@oclif/core@^1.25.0", "@oclif/core@^1.26.2":
+  name "@oclif/core-v1"
   version "1.26.2"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.26.2.tgz#763c68dc91388225acd6f0819c90f93e5d8cde41"
   integrity sha512-6jYuZgXvHfOIc9GIaS4T3CIKGTjPmfAxuMcbCbMRKJJl4aq/4xeRlEz0E8/hz8HxvxZBGvN2GwAUHlrGWQVrVw==

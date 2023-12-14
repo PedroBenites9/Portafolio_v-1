@@ -25,22 +25,30 @@ const Section = styled.div`
   display: flex;
   height: 100vh;
   scroll-snap-align: center;
+  @media (min-width: 451px) {
+  }
 `;
 
 const Contenedor = styled.div`
-  position: relative;
   display: flex;
   flex-flow: nowrap row;
   justify-content: center;
   align-items: center;
   gap: 50px;
   width: 100%;
+  @media (max-width: 451px) {
+    flex-flow: column;
+  }
 `;
 
 const ContenedorModel = styled.div`
   height: 100%;
   width: 30vw;
+  @media (min-width: 451px) {
+    height: 10%;
+  }
 `;
+
 const ContenedorBio = styled.div`
   /* border: 10px solid #3d3d3d; */
   /* background-color: #1d1d1d; */
@@ -51,33 +59,54 @@ const ContenedorBio = styled.div`
   padding: 0 50px;
   justify-content: center;
   align-items: center;
+  @media (max-width: 451px) {
+    width: 100%;
+  }
 `;
+
 const FirstRow = styled.div`
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   gap: 50px;
+  @media (max-width: 451px) {
+    flex-flow: column;
+    gap: 10px;
+  }
 `;
 
 const Selfie = styled.img`
   width: auto;
   height: 40vh;
+  @media (max-width: 451px) {
+    height: auto;
+    width: 60%;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 4rem;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: center;
+  @media (max-width: 451px) {
+    font-size: 1rem;
+  }
 `;
 
 const SubTitle = styled.h3`
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 30px;
+  @media (max-width: 451px) {
+    font-size: 1rem;
+  }
 `;
 const Text = styled.p`
   text-align: justify;
+  @media (max-width: 451px) {
+    font-size: 0.5rem;
+  }
 `;
 
 const ContenedorText = styled.div`
@@ -85,15 +114,13 @@ const ContenedorText = styled.div`
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  @media (max-width: 451px) {
+    width: 100%;
+  }
 `;
 
 const SecondRow = styled.div`
-  padding: 60px 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 5vh 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  margin-top: 10px;
 `;
 
 const TextSR = styled.h2`
@@ -110,6 +137,7 @@ const ContenedorOscio = styled.div`
   grid-row-gap: 0px;
   justify-items: center;
   align-items: center;
+  gap: 30px;
 `;
 
 const TarjetaIcon = styled.div`
