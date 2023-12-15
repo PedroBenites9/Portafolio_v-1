@@ -20,3 +20,9 @@
         margin: 10px auto;
     }
 }
+
+.icon-aboutme {
+    @media(max-width: 451px) {
+        padding-top: 100px;
+    }
+}

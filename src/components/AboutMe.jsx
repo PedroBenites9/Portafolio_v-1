@@ -25,7 +25,9 @@ const Section = styled.div`
   display: flex;
   height: 100vh;
   scroll-snap-align: center;
+
   @media (min-width: 451px) {
+    padding: 100px 0;
   }
 `;
 
@@ -105,7 +107,8 @@ const SubTitle = styled.h3`
 const Text = styled.p`
   text-align: justify;
   @media (max-width: 451px) {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+    padding: 20px;
   }
 `;
 
@@ -211,6 +214,8 @@ const AboutMe = () => {
               color: "#c7c7c7",
               "margin-top": "50px",
             }}
+            className="icon-aboutme
+            }"
           />
           <Title>Sobre mi</Title>
           <FirstRow>
