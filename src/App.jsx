@@ -32,7 +32,6 @@ const Background = styled.div`
   width: 80%;
   margin: 0 auto;
   @media (max-width: 451px) {
-    height: auto;
   }
 `;
 

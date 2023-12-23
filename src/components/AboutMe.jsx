@@ -58,11 +58,12 @@ const ContenedorBio = styled.div`
   flex-flow: column nowrap;
   height: 100%;
   width: 40vw;
-  padding: 0 50px;
+  padding: 0 100px;
   justify-content: center;
   align-items: center;
   @media (max-width: 451px) {
     width: 100%;
+    margin-top: 200px;
   }
 `;
 
@@ -212,7 +213,6 @@ const AboutMe = () => {
             size="2xl"
             style={{
               color: "#c7c7c7",
-              "margin-top": "50px",
             }}
             className="icon-aboutme
             }"
