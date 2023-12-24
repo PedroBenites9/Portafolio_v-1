@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Model3d from "./Model3d";
-import { element } from "prop-types";
 
 const Section = styled.div`
   height: 100vh;
@@ -8,14 +7,11 @@ const Section = styled.div`
   scroll-snap-align: center;
   display: flex;
   flex-flow: column nowrap;
+  padding-top: 10px;
+  @media (max-width: 451px) {
+    height: auto;
+  }
 `;
-const ContenedorModel = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  width: 25vw;
-  margin: 0 10px;
-`;
-
 const ContenedorMain = styled.div`
   display: flex;
   flex-flow: column nowrap;
@@ -26,8 +22,27 @@ const ContenedorMain = styled.div`
   padding-top: 50px;
   align-items: center;
   gap: 50px;
+  @media (max-width: 451px) {
+    height: 100%;
+  }
 `;
-const Title = styled.h1``;
+
+const ContenedorTitle = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  width: 15vw;
+  margin: 0 10px;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 451px) {
+    flex-flow: column-reverse nowrap;
+    width: 100%;
+  }
+`;
+
+const Title = styled.h1`
+  font-size: 3rem;
+`;
 
 const ContenedorProyectos = styled.div`
   display: flex;
@@ -49,6 +64,11 @@ const Card = styled.div`
     box-shadow: -9px 10px 17px 0px rgba(5, 5, 5, 0.5);
     transform: translate(0, -14px);
   }
+
+  @media (max-width: 451px) {
+    height: 50vh;
+    width: 60vw;
+  }
 `;
 const CardTitle = styled.h3``;
 const CardImg = styled.img`
@@ -56,6 +76,8 @@ const CardImg = styled.img`
   border-radius: 20px;
   min-height: 250px;
   object-fit: cover;
+  @media (max-width: 451) {
+  }
 `;
 const CardDescription = styled.p``;
 
@@ -74,6 +96,9 @@ const ContenedorCard = styled.div`
   gap: 30px;
   align-items: center;
   justify-content: center;
+  @media (max-width: 451px) {
+    width: 100%;
+  }
 `;
 
 const Github = styled.img`
@@ -122,14 +147,13 @@ const Proyectos = () => {
   const really = () => {
     alert("Encerio? :/");
   };
-
   return (
     <Section>
       <ContenedorMain>
-        <ContenedorModel>
+        <ContenedorTitle>
           <Model3d />
           <Title>Proyectos</Title>
-        </ContenedorModel>
+        </ContenedorTitle>
         <ContenedorProyectos>
           <ContenedorCard>
             <Card>
@@ -137,8 +161,8 @@ const Proyectos = () => {
               <CardInfo>
                 <CardTitle>Estacion Oceanica</CardTitle>
                 <CardDescription>
-                  Mi proyecto realizado en 2022 mientras realizaba la cursada de
-                  desarrollo web en &quot;CoderHouse&quot;{" "}
+                  Mi primer proyecto realizado en 2022 mientras realizaba la
+                  cursada de desarrollo web en &quot;CoderHouse&quot;{" "}
                 </CardDescription>
                 <CardLogo>
                   <Click href="https://github.com/PedroBenites9/estacionOceanica-pedroBenites">
@@ -155,9 +179,8 @@ const Proyectos = () => {
               <CardInfo>
                 <CardTitle>Portafolio</CardTitle>
                 <CardDescription>
-                  Este es uno de los tantos portafolios que habre hecho. No creo
-                  que sea el prototipo final. Pero es lo mas presentable que
-                  tengo hasta ahora jaja
+                  Este es uno de los tantos portafolios que realice. Lo estas
+                  viendo en estos momentos.
                 </CardDescription>
                 <CardLogo>
                   <Click href="https://github.com/PedroBenites9/Portafolio_v-1">
@@ -168,15 +191,14 @@ const Proyectos = () => {
               </CardInfo>
             </Card>
             <Card>
-              <CardImg src="./img/fondoMuseo.jpg" alt="imgProyect" />
+              <CardImg src="./img/dawn.PNG" alt="imgProyect" />
               <CardInfo>
-                <CardTitle>Estacion Oceanica</CardTitle>
+                <CardTitle>Dawn</CardTitle>
                 <CardDescription>
-                  Mi proyecto realizado en 2022 mientras realizaba la cursada de
-                  desarrollo web en &quot;CoderHouse&quot;{" "}
+                  Una web shopify de articulos de accesorios para mujeres
                 </CardDescription>
                 <CardLogo>
-                  <Click href="./">
+                  <Click href="https://github.com/PedroBenites9/DawnPage">
                     <Github src="./img/GitHub.svg" />
                   </Click>
                   <Button>Ver</Button>

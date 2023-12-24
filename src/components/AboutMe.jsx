@@ -20,63 +20,97 @@ import {
   faGamepad,
   faMusic,
 } from "@fortawesome/free-solid-svg-icons";
+
 const Section = styled.div`
   display: flex;
   height: 100vh;
   scroll-snap-align: center;
+
+  @media (min-width: 451px) {
+    padding: 100px 0;
+  }
 `;
 
 const Contenedor = styled.div`
-  position: relative;
   display: flex;
   flex-flow: nowrap row;
   justify-content: center;
   align-items: center;
   gap: 50px;
   width: 100%;
+  @media (max-width: 451px) {
+    flex-flow: column;
+  }
 `;
 
 const ContenedorModel = styled.div`
   height: 100%;
   width: 30vw;
+  @media (min-width: 451px) {
+    height: 10%;
+  }
 `;
+
 const ContenedorBio = styled.div`
   /* border: 10px solid #3d3d3d; */
-  background-color: #1d1d1d;
+  /* background-color: #1d1d1d; */
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
   width: 40vw;
-  padding: 0 50px;
+  padding: 0 100px;
   justify-content: center;
   align-items: center;
+  @media (max-width: 451px) {
+    width: 100%;
+    margin-top: 200px;
+  }
 `;
+
 const FirstRow = styled.div`
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   gap: 50px;
+  @media (max-width: 451px) {
+    flex-flow: column;
+    gap: 10px;
+  }
 `;
 
 const Selfie = styled.img`
   width: auto;
   height: 40vh;
+  @media (max-width: 451px) {
+    height: auto;
+    width: 60%;
+  }
 `;
 
 const Title = styled.h1`
   font-size: 4rem;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
   text-align: center;
+  @media (max-width: 451px) {
+    font-size: 1rem;
+  }
 `;
 
 const SubTitle = styled.h3`
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 30px;
+  @media (max-width: 451px) {
+    font-size: 1rem;
+  }
 `;
 const Text = styled.p`
   text-align: justify;
+  @media (max-width: 451px) {
+    font-size: 0.8rem;
+    padding: 20px;
+  }
 `;
 
 const ContenedorText = styled.div`
@@ -84,19 +118,18 @@ const ContenedorText = styled.div`
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  @media (max-width: 451px) {
+    width: 100%;
+  }
 `;
 
 const SecondRow = styled.div`
-  padding: 60px 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 5vh 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  margin-top: 10px;
 `;
 
 const TextSR = styled.h2`
   grid-area: 1 / 1 / 2 / 2;
+  text-align: center;
 `;
 
 const ContenedorOscio = styled.div`
@@ -108,6 +141,7 @@ const ContenedorOscio = styled.div`
   grid-row-gap: 0px;
   justify-items: center;
   align-items: center;
+  gap: 30px;
 `;
 
 const TarjetaIcon = styled.div`
@@ -129,7 +163,7 @@ const Redes = styled.div`
   gap: 20px;
 `;
 
-const Boton = styled.button`
+const Boton = styled.a`
   background-color: rgba(68, 68, 68, 0.5);
   border-radius: 8px;
   border-width: 0;
@@ -178,9 +212,10 @@ const AboutMe = () => {
             icon={faCircleInfo}
             size="2xl"
             style={{
-              color: "#0b63e6",
-              "margin-top": "50px",
+              color: "#c7c7c7",
             }}
+            className="icon-aboutme
+            }"
           />
           <Title>Sobre mi</Title>
           <FirstRow>
@@ -193,19 +228,18 @@ const AboutMe = () => {
                 Uno de mis pasatiempos son los videojuegos, en especial los
                 juegos shooters. Soy hincha de Boca Juniors. Me gusta el futbol
                 y a la vez debatir temas relacionados al deporte. Otros de mis
-                pasatiempos es la lectura. Desde muy pequeño mis padres me
-                inculcaron a la lectura y hasta la fecha poseo una
-                minibiblioteca. Unos de mis hobbies es la perfumería. Poseo una
-                Colección de perfumes de diseñador y de marca nacional. Descubrí
-                mi gusto hacia los perfumes en plena pandemia cuando contraje él
-                virus y no pude oler nada, desde ese entonces siento un placer
-                enorme poder sentir los distintos aromas que ofrece los
-                perfumes.
+                pasatiempos es la lectura. Me gusta mucho la lectura y hasta la
+                fecha poseo una minibiblioteca. Unos de mis hobbies es la
+                perfumería. Poseo una colección de perfumes de diseñador y de
+                marca nacional, descubrí mi gusto hacia los perfumes en plena
+                pandemia cuando contraje él virus y no pude oler nada, desde ese
+                entonces siento un placer enorme poder sentir los distintos
+                aromas que ofrece los perfumes.
               </Text>
             </ContenedorText>
           </FirstRow>
           <SecondRow>
-            <TextSR>Lo que más me gusta</TextSR>
+            <TextSR>i ❤️</TextSR>
             <ContenedorOscio>
               <TarjetaIcon>
                 <FontAwesomeIcon icon={faGamepad} />
@@ -245,7 +279,10 @@ const AboutMe = () => {
               </TarjetaIcon>
             </ContenedorOscio>
             <ContenedorLinks>
-              <Boton>
+              <Boton
+                href="../../public/documents/CVPedro-Programacion.pdf"
+                download={"CV-PedroBenites"}
+              >
                 Mi CV <FontAwesomeIcon icon={faDownload} />
               </Boton>
               <Redes>
