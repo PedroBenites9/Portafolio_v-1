@@ -10,15 +10,26 @@ const Section = styled.div`
   align-items: center;
   max-width: 80%;
   margin: 0 auto;
+  @media (max-width: 451px) {
+    margin: 0 auto;
+  }
 `;
 
 const Title = styled.h1`
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-decoration-line: underline;
+  @media (max-width: 451px) {
+    text-align: center;
+    font-size: 1.4rem;
+  }
 `;
 
 const SubTitle = styled.h2`
   font-size: 1.8rem;
+  @media (max-width: 451px) {
+    text-align: center;
+    font-size: 1.3rem;
+  }
 `;
 
 const Contenedor = styled.div`
@@ -29,6 +40,8 @@ const Contenedor = styled.div`
 const ContenedorSkill = styled.div`
   display: flex;
   gap: 20px;
+  @media (max-width: 451px) {
+  }
 `;
 const ContenedorSkillData = styled.div`
   display: flex;
@@ -58,12 +71,18 @@ const ContenedorSkillData = styled.div`
 `;
 const TitleSkill = styled.h3`
   font-weight: 400;
+  @media (max-width: 451px) {
+    font-size: 0.5rem;
+  }
 `;
 const Image = styled.img`
   content: "";
   height: auto;
   width: 4vh;
   margin: 0 10px 0 0;
+  @media (max-width: 451px) {
+    margin: 0 auto;
+  }
 `;
 const ContenedorLF = styled.div`
   display: flex;
@@ -96,6 +115,9 @@ const ContenedorLFData = styled.div`
     border-color: #494444;
     color: white;
     background: #686464;
+  }
+  @media (max-width: 451px) {
+    font-size: 1rem;
   }
 `;
 
@@ -138,7 +160,7 @@ const Skill = () => {
     <>
       <Section>
         <Flip left>
-          <Title>MIS CONOCIMIENTOS TECNOLOGICOS</Title>
+          <Title>CONOCIMIENTOS TECNOLOGICOS</Title>
         </Flip>
         <Contenedor>
           <Zoom delay={1000}>

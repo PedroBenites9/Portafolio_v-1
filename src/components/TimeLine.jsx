@@ -9,10 +9,17 @@ const Section = styled.div`
   height: 100%;
   scroll-snap-align: center;
   margin: 5%;
+  margin: 5%;
+  @media (min-width: 1500px) {
+    height: 100vh;
+  }
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 `;
 
 const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   padding-bottom: 30px;
   text-decoration-line: underline;

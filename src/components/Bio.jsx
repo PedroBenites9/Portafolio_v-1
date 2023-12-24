@@ -4,7 +4,13 @@ import styled from "styled-components";
 import { Flip, Fade } from "react-reveal";
 // css
 import "../css/style.css";
-
+//awesome icons
+import {
+  faInstagram,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -60,6 +66,7 @@ const Img = styled.img`
 const Icons = styled.div`
   display: flex;
   gap: 3rem;
+  font-size: 3rem;
 `;
 const Instagram = styled.a`
   &:after {
@@ -71,6 +78,7 @@ const Instagram = styled.a`
     background: linear-gradient(-45deg, #fa0f94, #ffec17);
     position: absolute;
     transition: 0.5s;
+    z-index: -1;
   }
   &:hover::after {
     top: 0;
@@ -86,6 +94,7 @@ const Linkedin = styled.a`
     background: linear-gradient(-45deg, #1c88ed, #5517ff);
     position: absolute;
     transition: 0.5s;
+    z-index: -1;
   }
   &:hover::after {
     top: 0;
@@ -101,6 +110,7 @@ const GitHub = styled.a`
     background: linear-gradient(-45deg, #1a1a1a, #6b6b6b);
     position: absolute;
     transition: 0.5s;
+    z-index: -1;
   }
   &:hover::after {
     top: 0;
@@ -166,19 +176,19 @@ const Bio = () => {
               href="https://www.instagram.com/_.pepox/"
               className="socialMedia"
             >
-              <i className="fab fa-instagram fa-3x"></i>
+              <FontAwesomeIcon icon={faInstagram} />
             </Instagram>
             <Linkedin
               href="https://www.linkedin.com/in/pedro-benites99/"
               className="socialMedia"
             >
-              <i className="fab fa-linkedin fa-3x "></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </Linkedin>
             <GitHub
               href="https://github.com/PedroBenites9"
               className="socialMedia"
             >
-              <i className="fab fa-github fa-3x"></i>
+              <FontAwesomeIcon icon={faGithub} />
             </GitHub>
           </Icons>
           <Button>Contactar</Button>
