@@ -4,11 +4,15 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import "../css/style.css";
 
 const Section = styled.div`
-  height: 100%;
+  height: 100vh;
   scroll-snap-align: center;
   margin: 5%;
+  @media (min-width: 1500px) {
+    height: 100vh;
+  }
 `;
 
 const Title = styled.h1`
@@ -23,9 +27,9 @@ const TimeLine = () => {
   return (
     <Section>
       <Title>Linea de tiempo</Title>
-      <VerticalTimeline>
+      <VerticalTimeline className="lineMain">
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element--work tarjetaLine"
           contentStyle={{ background: "rgb(99, 99, 99)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(99,99,99)" }}
           date="2013 - 2018"

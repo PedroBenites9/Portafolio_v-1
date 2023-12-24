@@ -81,3 +81,12 @@
     -webkit-user-select: none;
     touch-action: manipulation;
 }
+
+
+.vertical-timeline-element-content {
+    @media(min-width: 1500px) {
+        max-height: 20vh;
+        width: 50vh;
+        font-size: 1.2rem;
+    }
+}
