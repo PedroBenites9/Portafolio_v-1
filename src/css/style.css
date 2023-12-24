@@ -21,7 +21,6 @@
     }
 }
 
-<<<<<<< HEAD
 .button-28:disabled {
     pointer-events: none;
 }
@@ -68,10 +67,5 @@
         max-height: 20vh;
         width: 50vh;
         font-size: 1.2rem;
-=======
-.icon-aboutme {
-    @media(max-width: 451px) {
-        padding-top: 100px;
->>>>>>> 25c7621cb45232b152596d3f607fc0ec10901a2b
     }
 }
