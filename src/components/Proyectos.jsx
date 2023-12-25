@@ -138,6 +138,10 @@ const CardLogo = styled.div`
   justify-content: end;
   gap: 30px;
   margin: 10px 0;
+  @media (max-width: 451px) {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
 `;
 const Click = styled.a`
   width: 15%;

@@ -25,10 +25,6 @@ const Section = styled.div`
   display: flex;
   height: 100vh;
   scroll-snap-align: center;
-
-  @media (max-width: 451px) {
-    padding: 100px 0;
-  }
 `;
 
 const Contenedor = styled.div`
