@@ -26,7 +26,7 @@ const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
 
-  @media (min-width: 451px) {
+  @media (max-width: 451px) {
     padding: 100px 0;
   }
 `;
@@ -46,7 +46,7 @@ const Contenedor = styled.div`
 const ContenedorModel = styled.div`
   height: 100%;
   width: 30vw;
-  @media (min-width: 451px) {
+  @media (max-width: 451px) {
     height: 10%;
   }
 `;
@@ -107,6 +107,7 @@ const SubTitle = styled.h3`
 `;
 const Text = styled.p`
   text-align: justify;
+  word-spacing: 4px;
   @media (max-width: 451px) {
     font-size: 0.8rem;
     padding: 20px;
@@ -125,11 +126,16 @@ const ContenedorText = styled.div`
 
 const SecondRow = styled.div`
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 `;
 
 const TextSR = styled.h2`
   grid-area: 1 / 1 / 2 / 2;
   text-align: center;
+  margin: 20px 0;
 `;
 
 const ContenedorOscio = styled.div`
@@ -226,58 +232,56 @@ const AboutMe = () => {
                 Soy un desarrollador web, y uno de mis objetivos es ser, en
                 corto plazo, desarrollador Fron-End y a largo plazo Fullstack.
                 Uno de mis pasatiempos son los videojuegos, en especial los
-                juegos shooters. Soy hincha de Boca Juniors. Me gusta el futbol
-                y a la vez debatir temas relacionados al deporte. Otros de mis
-                pasatiempos es la lectura. Me gusta mucho la lectura y hasta la
-                fecha poseo una minibiblioteca. Unos de mis hobbies es la
-                perfumería. Poseo una colección de perfumes de diseñador y de
-                marca nacional, descubrí mi gusto hacia los perfumes en plena
-                pandemia cuando contraje él virus y no pude oler nada, desde ese
-                entonces siento un placer enorme poder sentir los distintos
-                aromas que ofrece los perfumes.
+                juegos shooters. Otros de mis pasatiempos es la lectura. Me
+                gusta mucho la lectura y hasta la fecha poseo una
+                minibiblioteca. Unos de mis hobbies es la perfumería. Poseo una
+                colección de perfumes de diseñador. Me gusta el futbol y soy
+                fanatico de Boca Juniors
               </Text>
             </ContenedorText>
           </FirstRow>
           <SecondRow>
-            <TextSR>i ❤️</TextSR>
-            <ContenedorOscio>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faGamepad} />
-                Videojuegos
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faCode} />
-                Programar
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faCat} />
-                Michis
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faMusic} />
-                Música
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faBook} />
-                Libros
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faFutbol} />
-                Futbol
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faBottleDroplet} />
-                Perfumes
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faFilm} />
-                Peliculas
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faCameraRetro} />
-                Fotografía
-              </TarjetaIcon>
-            </ContenedorOscio>
+            <div>
+              <TextSR>i ❤️</TextSR>
+              <ContenedorOscio>
+                <TarjetaIcon>
+                  <FontAwesomeIcon icon={faGamepad} />
+                  Videojuegos
+                </TarjetaIcon>
+                <TarjetaIcon>
+                  <FontAwesomeIcon icon={faCode} />
+                  Programar
+                </TarjetaIcon>
+                <TarjetaIcon>
+                  <FontAwesomeIcon icon={faCat} />
+                  Michis
+                </TarjetaIcon>
+                <TarjetaIcon>
+                  <FontAwesomeIcon icon={faMusic} />
+                  Música
+                </TarjetaIcon>
+                <TarjetaIcon>
+                  <FontAwesomeIcon icon={faBook} />
+                  Libros
+                </TarjetaIcon>
+                <TarjetaIcon>
+                  <FontAwesomeIcon icon={faFutbol} />
+                  Futbol
+                </TarjetaIcon>
+                <TarjetaIcon>
+                  <FontAwesomeIcon icon={faBottleDroplet} />
+                  Perfumes
+                </TarjetaIcon>
+                <TarjetaIcon>
+                  <FontAwesomeIcon icon={faFilm} />
+                  Peliculas
+                </TarjetaIcon>
+                <TarjetaIcon>
+                  <FontAwesomeIcon icon={faCameraRetro} />
+                  Fotografía
+                </TarjetaIcon>
+              </ContenedorOscio>
+            </div>
             <ContenedorLinks>
               <Boton
                 href="../../public/documents/CVPedro-Programacion.pdf"

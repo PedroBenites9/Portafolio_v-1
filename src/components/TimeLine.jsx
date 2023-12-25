@@ -9,16 +9,9 @@ import "../css/style.css";
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
-<<<<<<< HEAD
-  margin: 5%;
-  @media (min-width: 1500px) {
-    height: 100vh;
-  }
-=======
   display: flex;
   flex-flow: column;
   justify-content: center;
->>>>>>> 25c7621cb45232b152596d3f607fc0ec10901a2b
 `;
 
 const Title = styled.h1`

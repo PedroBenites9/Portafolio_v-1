@@ -147,6 +147,9 @@ const Proyectos = () => {
   const really = () => {
     alert("Encerio? :/");
   };
+  const alerta = () => {
+    alert("En estos momentos no esta disponible la visualizacion :(");
+  };
   return (
     <Section>
       <ContenedorMain>
@@ -201,7 +204,7 @@ const Proyectos = () => {
                   <Click href="https://github.com/PedroBenites9/DawnPage">
                     <Github src="./img/GitHub.svg" />
                   </Click>
-                  <Button>Ver</Button>
+                  <Button onClick={alerta}>Ver</Button>
                 </CardLogo>
               </CardInfo>
             </Card>
