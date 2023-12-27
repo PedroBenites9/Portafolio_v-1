@@ -34,7 +34,7 @@ const Contenedor = styled.div`
   align-items: center;
   gap: 50px;
   width: 100%;
-  @media (max-width: 451px) {
+  @media (max-width: 767px) {
     flex-flow: column;
   }
 `;
@@ -42,9 +42,9 @@ const Contenedor = styled.div`
 const ContenedorModel = styled.div`
   height: 100%;
   width: 30vw;
-  @media (max-width: 451px) {
-    height: 10%;
-  }
+  /* @media (max-width: 451px) {
+    width: 50%;
+  } */
 `;
 
 const ContenedorBio = styled.div`
@@ -57,9 +57,10 @@ const ContenedorBio = styled.div`
   padding: 0 100px;
   justify-content: center;
   align-items: center;
-  @media (max-width: 451px) {
+  @media (max-width: 767px) {
     width: 100%;
-    margin-top: 200px;
+    margin-top: 100px;
+    padding: 0;
   }
 `;
 
@@ -80,7 +81,7 @@ const Selfie = styled.img`
   height: 40vh;
   @media (max-width: 451px) {
     height: auto;
-    width: 60%;
+    width: 40%;
   }
 `;
 
@@ -90,6 +91,7 @@ const Title = styled.h1`
   text-align: center;
   @media (max-width: 451px) {
     font-size: 1rem;
+    margin-bottom: 10px;
   }
 `;
 
@@ -99,6 +101,7 @@ const SubTitle = styled.h3`
   margin-bottom: 30px;
   @media (max-width: 451px) {
     font-size: 1rem;
+    margin-bottom: 5px;
   }
 `;
 const Text = styled.p`
@@ -126,12 +129,19 @@ const SecondRow = styled.div`
   justify-content: center;
   align-items: center;
   gap: 50px;
+  @media (max-width: 767px) {
+    flex-flow: column wrap;
+    gap: 0;
+  }
 `;
 
 const TextSR = styled.h2`
   grid-area: 1 / 1 / 2 / 2;
   text-align: center;
   margin: 20px 0;
+  @media (max-width: 451px) {
+    margin: 5px 0;
+  }
 `;
 
 const ContenedorOscio = styled.div`
@@ -144,6 +154,9 @@ const ContenedorOscio = styled.div`
   justify-items: center;
   align-items: center;
   gap: 30px;
+  @media (max-width: 451px) {
+    gap: 15px;
+  }
 `;
 
 const TarjetaIcon = styled.div`
@@ -157,6 +170,9 @@ const ContenedorLinks = styled.div`
   gap: 30px;
   margin: 50px;
   grid-area: 2 / 2 / 3 / 3;
+  @media (max-width: 451px) {
+    gap: 10px;
+  }
 `;
 const Redes = styled.div`
   display: flex;

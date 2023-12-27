@@ -18,8 +18,8 @@ const Section = styled.div`
 const Title = styled.h1`
   font-size: 3rem;
   text-decoration-line: underline;
+  text-align: center;
   @media (max-width: 451px) {
-    text-align: center;
     font-size: 1.4rem;
   }
 `;
