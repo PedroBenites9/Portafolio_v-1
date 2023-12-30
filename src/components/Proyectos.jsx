@@ -8,8 +8,8 @@ const Section = styled.div`
   display: flex;
   flex-flow: column nowrap;
   padding-top: 10px;
-  @media (max-width: 767px) {
-    height: auto;
+  @media (max-width: 1300px) {
+    height: 100%;
   }
 `;
 const ContenedorMain = styled.div`
@@ -22,8 +22,11 @@ const ContenedorMain = styled.div`
   padding-top: 50px;
   align-items: center;
   gap: 50px;
-  @media (max-width: 767px) {
+  @media (max-width: 1300px) {
     height: 100%;
+  }
+  @media (max-width: 767px) {
+    padding-top: 20px;
   }
 `;
 
@@ -34,7 +37,7 @@ const ContenedorTitle = styled.div`
   margin: 0 10px;
   align-items: center;
   justify-content: center;
-  @media (max-width: 451px) {
+  @media (max-width: 767px) {
     flex-flow: column-reverse nowrap;
     width: 100%;
   }
@@ -74,7 +77,7 @@ const Card = styled.div`
   }
   @media (max-width: 1024px) {
     width: 70vw;
-    height: auto;
+    height: 100%;
   }
 `;
 const CardTitle = styled.h3``;

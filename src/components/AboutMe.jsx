@@ -24,27 +24,23 @@ import {
 const Section = styled.div`
   display: flex;
   height: 100vh;
-  scroll-snap-align: center;
-`;
-
-const Contenedor = styled.div`
   display: flex;
-  flex-flow: nowrap row;
+  flex-flow: wrap row;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   width: 100%;
+  scroll-snap-align: center;
   @media (max-width: 767px) {
-    flex-flow: column;
+    height: 100%;
   }
 `;
 
 const ContenedorModel = styled.div`
   height: 100%;
-  width: 30vw;
-  /* @media (max-width: 451px) {
-    width: 50%;
-  } */
+  width: 29%;
+  @media (max-width: 1300px) {
+    display: none;
+  }
 `;
 
 const ContenedorBio = styled.div`
@@ -52,14 +48,15 @@ const ContenedorBio = styled.div`
   /* background-color: #1d1d1d; */
   display: flex;
   flex-flow: column nowrap;
-  height: 100%;
-  width: 40vw;
+  width: 50%;
   padding: 0 100px;
   justify-content: center;
   align-items: center;
-  @media (max-width: 767px) {
+  @media (max-width: 1300px) {
     width: 100%;
-    margin-top: 100px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 30px;
     padding: 0;
   }
 `;
@@ -70,10 +67,8 @@ const FirstRow = styled.div`
   align-items: center;
   justify-content: center;
   gap: 50px;
-  @media (max-width: 451px) {
-    flex-flow: column;
-    gap: 10px;
-  }
+  gap: 30px;
+  padding: 10px;
 `;
 
 const Selfie = styled.img`
@@ -224,101 +219,98 @@ const Enlace = styled.a`
 const AboutMe = () => {
   return (
     <Section>
-      <Contenedor>
-        <ContenedorBio>
-          <FontAwesomeIcon
-            icon={faCircleInfo}
-            size="2xl"
-            style={{
-              color: "#c7c7c7",
-            }}
-            className="icon-aboutme
+      <ContenedorBio>
+        <FontAwesomeIcon
+          icon={faCircleInfo}
+          size="2xl"
+          style={{
+            color: "#c7c7c7",
+          }}
+          className="icon-aboutme
             }"
-          />
-          <Title>Sobre mi</Title>
-          <FirstRow>
-            <Selfie src="./img/selfiesnipe.jpg" />
-            <ContenedorText>
-              <SubTitle>Asi es, mi nombre es Pedro Benites</SubTitle>
-              <Text>
-                Soy un desarrollador web, y uno de mis objetivos es ser, en
-                corto plazo, desarrollador Fron-End y a largo plazo Fullstack.
-                Uno de mis pasatiempos son los videojuegos, en especial los
-                juegos shooters. Otros de mis pasatiempos es la lectura. Me
-                gusta mucho la lectura y hasta la fecha poseo una
-                minibiblioteca. Unos de mis hobbies es la perfumería. Poseo una
-                colección de perfumes de diseñador. Me gusta el futbol y soy
-                fanatico de Boca Juniors
-              </Text>
-            </ContenedorText>
-          </FirstRow>
-          <SecondRow>
-            <div>
-              <TextSR>i ❤️</TextSR>
-              <ContenedorOscio>
-                <TarjetaIcon>
-                  <FontAwesomeIcon icon={faGamepad} />
-                  Videojuegos
-                </TarjetaIcon>
-                <TarjetaIcon>
-                  <FontAwesomeIcon icon={faCode} />
-                  Programar
-                </TarjetaIcon>
-                <TarjetaIcon>
-                  <FontAwesomeIcon icon={faCat} />
-                  Michis
-                </TarjetaIcon>
-                <TarjetaIcon>
-                  <FontAwesomeIcon icon={faMusic} />
-                  Música
-                </TarjetaIcon>
-                <TarjetaIcon>
-                  <FontAwesomeIcon icon={faBook} />
-                  Libros
-                </TarjetaIcon>
-                <TarjetaIcon>
-                  <FontAwesomeIcon icon={faFutbol} />
-                  Futbol
-                </TarjetaIcon>
-                <TarjetaIcon>
-                  <FontAwesomeIcon icon={faBottleDroplet} />
-                  Perfumes
-                </TarjetaIcon>
-                <TarjetaIcon>
-                  <FontAwesomeIcon icon={faFilm} />
-                  Peliculas
-                </TarjetaIcon>
-                <TarjetaIcon>
-                  <FontAwesomeIcon icon={faCameraRetro} />
-                  Fotografía
-                </TarjetaIcon>
-              </ContenedorOscio>
-            </div>
-            <ContenedorLinks>
-              <Boton
-                href="../../public/documents/CVPedro-Programacion.pdf"
-                download={"CV-PedroBenites"}
-              >
-                Mi CV <FontAwesomeIcon icon={faDownload} />
-              </Boton>
-              <Redes>
-                <Enlace href="/#">
-                  <FontAwesomeIcon icon={faInstagram} style={{}} />
-                </Enlace>
-                <Enlace href="/#">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </Enlace>
-                <Enlace href="/#">
-                  <FontAwesomeIcon icon={faGithub} />
-                </Enlace>
-              </Redes>
-            </ContenedorLinks>
-          </SecondRow>
-        </ContenedorBio>
-        <ContenedorModel>
-          <ModelComputer />
-        </ContenedorModel>
-      </Contenedor>
+        />
+        <Title>Sobre mi</Title>
+        <FirstRow>
+          <Selfie src="./img/selfiesnipe.jpg" />
+          <ContenedorText>
+            <SubTitle>Asi es, mi nombre es Pedro Benites</SubTitle>
+            <Text>
+              Soy un desarrollador web, y uno de mis objetivos es ser, en corto
+              plazo, desarrollador Fron-End y a largo plazo Fullstack. Uno de
+              mis pasatiempos son los videojuegos, en especial los juegos
+              shooters. Otros de mis pasatiempos es la lectura. Me gusta mucho
+              la lectura y hasta la fecha poseo una minibiblioteca. Unos de mis
+              hobbies es la perfumería. Poseo una colección de perfumes de
+              diseñador. Me gusta el futbol y soy fanatico de Boca Juniors
+            </Text>
+          </ContenedorText>
+        </FirstRow>
+        <SecondRow>
+          <div>
+            <TextSR>i ❤️</TextSR>
+            <ContenedorOscio>
+              <TarjetaIcon>
+                <FontAwesomeIcon icon={faGamepad} />
+                Videojuegos
+              </TarjetaIcon>
+              <TarjetaIcon>
+                <FontAwesomeIcon icon={faCode} />
+                Programar
+              </TarjetaIcon>
+              <TarjetaIcon>
+                <FontAwesomeIcon icon={faCat} />
+                Michis
+              </TarjetaIcon>
+              <TarjetaIcon>
+                <FontAwesomeIcon icon={faMusic} />
+                Música
+              </TarjetaIcon>
+              <TarjetaIcon>
+                <FontAwesomeIcon icon={faBook} />
+                Libros
+              </TarjetaIcon>
+              <TarjetaIcon>
+                <FontAwesomeIcon icon={faFutbol} />
+                Futbol
+              </TarjetaIcon>
+              <TarjetaIcon>
+                <FontAwesomeIcon icon={faBottleDroplet} />
+                Perfumes
+              </TarjetaIcon>
+              <TarjetaIcon>
+                <FontAwesomeIcon icon={faFilm} />
+                Peliculas
+              </TarjetaIcon>
+              <TarjetaIcon>
+                <FontAwesomeIcon icon={faCameraRetro} />
+                Fotografía
+              </TarjetaIcon>
+            </ContenedorOscio>
+          </div>
+          <ContenedorLinks>
+            <Boton
+              href="../../public/documents/CVPedro-Programacion.pdf"
+              download={"CV-PedroBenites"}
+            >
+              Mi CV <FontAwesomeIcon icon={faDownload} />
+            </Boton>
+            <Redes>
+              <Enlace href="/#">
+                <FontAwesomeIcon icon={faInstagram} style={{}} />
+              </Enlace>
+              <Enlace href="/#">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </Enlace>
+              <Enlace href="/#">
+                <FontAwesomeIcon icon={faGithub} />
+              </Enlace>
+            </Redes>
+          </ContenedorLinks>
+        </SecondRow>
+      </ContenedorBio>
+      <ContenedorModel>
+        <ModelComputer />
+      </ContenedorModel>
     </Section>
   );
 };

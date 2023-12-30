@@ -12,6 +12,10 @@ const Section = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: center;
+  @media (max-width: 767px) {
+    height: 100%;
+    padding: 30px 0px;
+  }
 `;
 
 const Title = styled.h1`
