@@ -1,8 +1,5 @@
 /* eslint-disable react/no-unknown-property */
 import styled from "styled-components";
-<<<<<<< HEAD
-import ModelChair from "./ModelChair";
-=======
 import ModelComputer from "./ModelComputer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -24,7 +21,6 @@ import {
   faMusic,
 } from "@fortawesome/free-solid-svg-icons";
 
->>>>>>> pc
 const Section = styled.div`
   display: flex;
   height: 100vh;
@@ -210,11 +206,6 @@ const Enlace = styled.a`
 const AboutMe = () => {
   return (
     <Section>
-<<<<<<< HEAD
-      <ContenedorAboutMe>
-        <ModelChair />
-      </ContenedorAboutMe>
-=======
       <Contenedor>
         <ContenedorBio>
           <FontAwesomeIcon
@@ -312,7 +303,6 @@ const AboutMe = () => {
           <ModelComputer />
         </ContenedorModel>
       </Contenedor>
->>>>>>> pc
     </Section>
   );
 };
