@@ -415,17 +415,22 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.5.0.tgz#5d3912d28a2fb3e6c867320eb27a71f23e7bcb29"
   integrity sha512-vYC8oN2l8meu05sRi1j3Iie/HNFAeIxpitYFhsUrBc11TxiMken9QdXnSQ0q16FYsOSt/6soxs5ghdk+VYGiog==
 
+"@fortawesome/fontawesome-common-types@6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.5.1.tgz#fdb1ec4952b689f5f7aa0bffe46180bb35490032"
+  integrity sha512-GkWzv+L6d2bI5f/Vk6ikJ9xtl7dfXtoRu3YGE6nq0p/FFqA1ebMOAWg3XgRyb0I6LYyYkiAo+3/KrwuBp8xG7A==
+
 "@fortawesome/fontawesome-free@^6.5.0":
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-6.5.0.tgz#054bfee3488f0a7de2a52138b4244c5743d6743d"
   integrity sha512-npV8sIYN4tQmLkzkWU6Q2Ot8L3XqBzLpS+rGTl96nFM7qbMWIoFqcdp0YrcWlfRDQx5G+gA2sn8uSFNRAYTrrA==
 
-"@fortawesome/fontawesome-svg-core@^6.5.0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.5.0.tgz#4957e163bb890963442c110c5290703af21803d9"
-  integrity sha512-5DrR+oxQr+ruRQ3CEVV8DSCT/q8Atm56+FzAs0P6eW/epW47OmecSpSwc/YTlJ3u5BfPKUBSGyPR2qjZ+5eIgA==
+"@fortawesome/fontawesome-svg-core@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.5.1.tgz#9d56d46bddad78a7ebb2043a97957039fcebcf0a"
+  integrity sha512-MfRCYlQPXoLlpem+egxjfkEuP9UQswTrlCOsknus/NcMoblTH2g0jPrapbcIb04KGA7E2GZxbAccGZfWoYgsrQ==
   dependencies:
-    "@fortawesome/fontawesome-common-types" "6.5.0"
+    "@fortawesome/fontawesome-common-types" "6.5.1"
 
 "@fortawesome/free-brands-svg-icons@^6.5.0":
   version "6.5.0"
@@ -434,19 +439,19 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.5.0"
 
-"@fortawesome/free-regular-svg-icons@^6.5.0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.5.0.tgz#c2c448695efc0b2a16d126ff8e3cb94e1544778b"
-  integrity sha512-RaBW/y0jKcCyEPM+NYuBs3bQXuLYZHnXABQPmg6qwuRxNb2EUmyCcVUECUH2dkFmMjggh/xvl6n6y62Pl19JkA==
+"@fortawesome/free-regular-svg-icons@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.5.1.tgz#c98a91d2c9137ed54a7aa2362a916f46503e0627"
+  integrity sha512-m6ShXn+wvqEU69wSP84coxLbNl7sGVZb+Ca+XZq6k30SzuP3X4TfPqtycgUh9ASwlNh5OfQCd8pDIWxl+O+LlQ==
   dependencies:
-    "@fortawesome/fontawesome-common-types" "6.5.0"
+    "@fortawesome/fontawesome-common-types" "6.5.1"
 
-"@fortawesome/free-solid-svg-icons@^6.5.0":
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.5.0.tgz#bc50a291948fa43b1a9502548ac0b02e7b1f2433"
-  integrity sha512-6ZPq8mme67Q7O9Fbp2O+Z7mPZbcWTsRv555JLftLaTodiV0Wq+99YgMhyQ8O6mgNQfComqS9OEvqs7M8ySA92g==
+"@fortawesome/free-solid-svg-icons@^6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-6.5.1.tgz#737b8d787debe88b400ab7528f47be333031274a"
+  integrity sha512-S1PPfU3mIJa59biTtXJz1oI0+KAXW6bkAb31XKhxdxtuXDiUIFsih4JR1v5BbxY7hVHsD1RKq+jRkVRaf773NQ==
   dependencies:
-    "@fortawesome/fontawesome-common-types" "6.5.0"
+    "@fortawesome/fontawesome-common-types" "6.5.1"
 
 "@fortawesome/react-fontawesome@^0.2.0":
   version "0.2.0"
@@ -478,6 +483,7 @@
     tslib "^1.9.3"
 
 "@heroku-cli/command-v9@npm:@heroku-cli/command@^9.0.2", "@heroku-cli/command@^9.0.2":
+  name "@heroku-cli/command-v9"
   version "9.0.2"
   resolved "https://registry.yarnpkg.com/@heroku-cli/command/-/command-9.0.2.tgz#2e0d454fd60bde395c05872335b62b654cc640e7"
   integrity sha512-Qdm3gPfl0SAjKnQk8GVrjwDAzyv9bo1zxvIOW5OAWRsgC4xP0vjsxKv14I/SF715dM0sN14Llpxv0kmzYglkZA==
@@ -900,6 +906,7 @@
     tslib "^2.6.1"
 
 "@oclif/core-v1@npm:@oclif/core@^1.26.2", "@oclif/core@1.26.2", "@oclif/core@^1.1.1", "@oclif/core@^1.2.0", "@oclif/core@^1.25.0", "@oclif/core@^1.26.2":
+  name "@oclif/core-v1"
   version "1.26.2"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.26.2.tgz#763c68dc91388225acd6f0819c90f93e5d8cde41"
   integrity sha512-6jYuZgXvHfOIc9GIaS4T3CIKGTjPmfAxuMcbCbMRKJJl4aq/4xeRlEz0E8/hz8HxvxZBGvN2GwAUHlrGWQVrVw==
@@ -2060,6 +2067,8 @@ classnames@^2.2.6:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
   integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
 
+<<<<<<< HEAD
+=======
 clean-stack@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/clean-stack/-/clean-stack-2.2.0.tgz#ee8472dbb129e727b31e8a10a427dee9dfe4008b"
@@ -2195,6 +2204,7 @@ co@4.6.0, co@^4.6.0:
   resolved "https://registry.yarnpkg.com/co/-/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
   integrity sha512-QVb0dM5HvG+uaxitm8wONl7jltx8dqhfU33DcqtOZcLSVIKSDDLDi7+0LbAKiyI8hD9u42m2YxXSkMGWThaecQ==
 
+>>>>>>> pc
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.npmjs.org/color-convert/-/color-convert-1.9.3.tgz"
@@ -4791,6 +4801,8 @@ prelude-ls@^1.2.1:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
+<<<<<<< HEAD
+=======
 prepend-http@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
@@ -4811,6 +4823,7 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
+>>>>>>> pc
 prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"

@@ -7,14 +7,11 @@ const Section = styled.div`
   scroll-snap-align: center;
   display: flex;
   flex-flow: column nowrap;
+  padding-top: 10px;
+  @media (max-width: 1300px) {
+    height: 100%;
+  }
 `;
-const ContenedorModel = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  width: 25vw;
-  margin: 0 10px;
-`;
-
 const ContenedorMain = styled.div`
   display: flex;
   flex-flow: column nowrap;
@@ -25,8 +22,30 @@ const ContenedorMain = styled.div`
   padding-top: 50px;
   align-items: center;
   gap: 50px;
+  @media (max-width: 1300px) {
+    height: 100%;
+  }
+  @media (max-width: 767px) {
+    padding-top: 20px;
+  }
 `;
-const Title = styled.h1``;
+
+const ContenedorTitle = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  width: 15vw;
+  margin: 0 10px;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 767px) {
+    flex-flow: column-reverse nowrap;
+    width: 100%;
+  }
+`;
+
+const Title = styled.h1`
+  font-size: 3rem;
+`;
 
 const ContenedorProyectos = styled.div`
   display: flex;
@@ -34,6 +53,9 @@ const ContenedorProyectos = styled.div`
   align-items: center;
   justify-content: center;
   gap: 50px;
+  @media (max-width: 1024px) {
+    flex-flow: wrap;
+  }
 `;
 
 const Card = styled.div`
@@ -48,6 +70,15 @@ const Card = styled.div`
     box-shadow: -9px 10px 17px 0px rgba(5, 5, 5, 0.5);
     transform: translate(0, -14px);
   }
+
+  @media (max-width: 451px) {
+    height: 50vh;
+    width: auto;
+  }
+  @media (max-width: 1024px) {
+    width: 70vw;
+    height: 100%;
+  }
 `;
 const CardTitle = styled.h3``;
 const CardImg = styled.img`
@@ -55,6 +86,8 @@ const CardImg = styled.img`
   border-radius: 20px;
   min-height: 250px;
   object-fit: cover;
+  @media (max-width: 451) {
+  }
 `;
 const CardDescription = styled.p``;
 
@@ -73,6 +106,9 @@ const ContenedorCard = styled.div`
   gap: 30px;
   align-items: center;
   justify-content: center;
+  @media (max-width: 451px) {
+    width: 100%;
+  }
 `;
 
 const Github = styled.img`
@@ -112,6 +148,10 @@ const CardLogo = styled.div`
   justify-content: end;
   gap: 30px;
   margin: 10px 0;
+  @media (max-width: 451px) {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
 `;
 const Click = styled.a`
   width: 15%;
@@ -121,13 +161,16 @@ const Proyectos = () => {
   const really = () => {
     alert("Encerio? :/");
   };
+  const alerta = () => {
+    alert("En estos momentos no esta disponible la visualizacion :(");
+  };
   return (
     <Section>
       <ContenedorMain>
-        <ContenedorModel>
+        <ContenedorTitle>
           <Model3d />
           <Title>Proyectos</Title>
-        </ContenedorModel>
+        </ContenedorTitle>
         <ContenedorProyectos>
           <ContenedorCard>
             <Card>
@@ -168,12 +211,14 @@ const Proyectos = () => {
               <CardImg src="./img/dawn.PNG" alt="imgProyect" />
               <CardInfo>
                 <CardTitle>Dawn</CardTitle>
-                <CardDescription>Una web shopify</CardDescription>
+                <CardDescription>
+                  Una web shopify de articulos de accesorios para mujeres
+                </CardDescription>
                 <CardLogo>
-                  <Click href="./">
+                  <Click href="https://github.com/PedroBenites9/DawnPage">
                     <Github src="./img/GitHub.svg" />
                   </Click>
-                  <Button>Ver</Button>
+                  <Button onClick={alerta}>Ver</Button>
                 </CardLogo>
               </CardInfo>
             </Card>

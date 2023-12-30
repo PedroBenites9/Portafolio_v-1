@@ -4,28 +4,44 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import "../css/style.css";
 
 const Section = styled.div`
-  height: 100%;
+  height: 100vh;
   scroll-snap-align: center;
-  margin: 5%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  @media (max-width: 767px) {
+    height: 100%;
+    padding: 30px 0px;
+  }
 `;
 
 const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   padding-bottom: 30px;
   text-decoration-line: underline;
   text-shadow: 2px 2px 5px #000000;
+  @media (max-width: 451px) {
+    font-size: 2rem;
+  }
+`;
+const Text = styled.p`
+  font-size: 2rem;
+  @media (max-width: 451px) {
+    font-size: 1rem;
+  }
 `;
 
 const TimeLine = () => {
   return (
     <Section>
       <Title>Linea de tiempo</Title>
-      <VerticalTimeline>
+      <VerticalTimeline className="lineMain">
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className="vertical-timeline-element--work tarjetaLine"
           contentStyle={{ background: "rgb(99, 99, 99)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(99,99,99)" }}
           date="2013 - 2018"
@@ -34,12 +50,12 @@ const TimeLine = () => {
           <h3 className="vertical-timeline-element-title">
             Secundaria Tecnica
           </h3>
-          <p>
+          <Text>
             Estudie en una secundaria tecnica finalizando como Tecnico en
             Computación. En el curso de programacion aprendi las bases de
             algoritmos y mi primer lenguaje fue Java. <br /> Mis inicios de
             desarrollo web comenzaban en este punto
-          </p>
+          </Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -49,12 +65,12 @@ const TimeLine = () => {
           iconStyle={{ background: "rgb(99, 99, 99)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">Desarrollador web</h3>
-          <p>
+          <Text>
             Durante este periodo hice muchos cursos en Udemy, CoderHouse y en
             algunos canales de Youtube. Hasta este punto sentia un punto de
             estancamiento, pero con constancia llegue a encontrar mi camino al
             desarrollo Front-End.
-          </p>
+          </Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -66,11 +82,11 @@ const TimeLine = () => {
           <h3 className="vertical-timeline-element-title">
             Desarrollador Front-end
           </h3>
-          <p>
+          <Text>
             Ya con los conocimientos solidos basicos de HTML, CSS y JS termine
             realizando diversos proyectos propios y a su vez mi propio
             portafolio
-          </p>
+          </Text>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </Section>

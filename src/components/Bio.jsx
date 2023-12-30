@@ -11,6 +11,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;

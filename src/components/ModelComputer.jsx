@@ -7,6 +7,10 @@ import styled from "styled-components";
 const Container = styled.div`
   height: 100%;
   width: 100%;
+  @media (max-width: 451px) {
+    width: 50%;
+    height: 50%;
+  }
 `;
 const ModelComputer = () => {
   return (
