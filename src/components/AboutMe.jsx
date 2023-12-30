@@ -24,30 +24,22 @@ import {
 const Section = styled.div`
   display: flex;
   height: 100vh;
-  scroll-snap-align: center;
-
-  @media (min-width: 451px) {
-    padding: 100px 0;
-  }
-`;
-
-const Contenedor = styled.div`
   display: flex;
-  flex-flow: nowrap row;
+  flex-flow: wrap row;
   justify-content: center;
   align-items: center;
-  gap: 50px;
   width: 100%;
-  @media (max-width: 451px) {
-    flex-flow: column;
+  scroll-snap-align: center;
+  @media (max-width: 767px) {
+    height: 100%;
   }
 `;
 
 const ContenedorModel = styled.div`
   height: 100%;
-  width: 30vw;
-  @media (min-width: 451px) {
-    height: 10%;
+  width: 29%;
+  @media (max-width: 1300px) {
+    display: none;
   }
 `;
 
@@ -56,14 +48,16 @@ const ContenedorBio = styled.div`
   /* background-color: #1d1d1d; */
   display: flex;
   flex-flow: column nowrap;
-  height: 100%;
-  width: 40vw;
+  width: 50%;
   padding: 0 100px;
   justify-content: center;
   align-items: center;
-  @media (max-width: 451px) {
+  @media (max-width: 1300px) {
     width: 100%;
-    margin-top: 200px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 30px;
+    padding: 0;
   }
 `;
 
@@ -73,10 +67,8 @@ const FirstRow = styled.div`
   align-items: center;
   justify-content: center;
   gap: 50px;
-  @media (max-width: 451px) {
-    flex-flow: column;
-    gap: 10px;
-  }
+  gap: 30px;
+  padding: 10px;
 `;
 
 const Selfie = styled.img`
@@ -84,7 +76,7 @@ const Selfie = styled.img`
   height: 40vh;
   @media (max-width: 451px) {
     height: auto;
-    width: 60%;
+    width: 40%;
   }
 `;
 
@@ -94,6 +86,7 @@ const Title = styled.h1`
   text-align: center;
   @media (max-width: 451px) {
     font-size: 1rem;
+    margin-bottom: 10px;
   }
 `;
 
@@ -103,10 +96,12 @@ const SubTitle = styled.h3`
   margin-bottom: 30px;
   @media (max-width: 451px) {
     font-size: 1rem;
+    margin-bottom: 5px;
   }
 `;
 const Text = styled.p`
   text-align: justify;
+  word-spacing: 4px;
   @media (max-width: 451px) {
     font-size: 0.8rem;
     padding: 20px;
@@ -125,11 +120,23 @@ const ContenedorText = styled.div`
 
 const SecondRow = styled.div`
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  @media (max-width: 767px) {
+    flex-flow: column wrap;
+    gap: 0;
+  }
 `;
 
 const TextSR = styled.h2`
   grid-area: 1 / 1 / 2 / 2;
   text-align: center;
+  margin: 20px 0;
+  @media (max-width: 451px) {
+    margin: 5px 0;
+  }
 `;
 
 const ContenedorOscio = styled.div`
@@ -142,6 +149,9 @@ const ContenedorOscio = styled.div`
   justify-items: center;
   align-items: center;
   gap: 30px;
+  @media (max-width: 451px) {
+    gap: 15px;
+  }
 `;
 
 const TarjetaIcon = styled.div`
@@ -155,6 +165,9 @@ const ContenedorLinks = styled.div`
   gap: 30px;
   margin: 50px;
   grid-area: 2 / 2 / 3 / 3;
+  @media (max-width: 451px) {
+    gap: 10px;
+  }
 `;
 const Redes = styled.div`
   display: flex;
@@ -206,39 +219,34 @@ const Enlace = styled.a`
 const AboutMe = () => {
   return (
     <Section>
-      <Contenedor>
-        <ContenedorBio>
-          <FontAwesomeIcon
-            icon={faCircleInfo}
-            size="2xl"
-            style={{
-              color: "#c7c7c7",
-            }}
-            className="icon-aboutme
+      <ContenedorBio>
+        <FontAwesomeIcon
+          icon={faCircleInfo}
+          size="2xl"
+          style={{
+            color: "#c7c7c7",
+          }}
+          className="icon-aboutme
             }"
-          />
-          <Title>Sobre mi</Title>
-          <FirstRow>
-            <Selfie src="./img/selfiesnipe.jpg" />
-            <ContenedorText>
-              <SubTitle>Asi es, mi nombre es Pedro Benites</SubTitle>
-              <Text>
-                Soy un desarrollador web, y uno de mis objetivos es ser, en
-                corto plazo, desarrollador Fron-End y a largo plazo Fullstack.
-                Uno de mis pasatiempos son los videojuegos, en especial los
-                juegos shooters. Soy hincha de Boca Juniors. Me gusta el futbol
-                y a la vez debatir temas relacionados al deporte. Otros de mis
-                pasatiempos es la lectura. Me gusta mucho la lectura y hasta la
-                fecha poseo una minibiblioteca. Unos de mis hobbies es la
-                perfumería. Poseo una colección de perfumes de diseñador y de
-                marca nacional, descubrí mi gusto hacia los perfumes en plena
-                pandemia cuando contraje él virus y no pude oler nada, desde ese
-                entonces siento un placer enorme poder sentir los distintos
-                aromas que ofrece los perfumes.
-              </Text>
-            </ContenedorText>
-          </FirstRow>
-          <SecondRow>
+        />
+        <Title>Sobre mi</Title>
+        <FirstRow>
+          <Selfie src="./img/selfiesnipe.jpg" />
+          <ContenedorText>
+            <SubTitle>Asi es, mi nombre es Pedro Benites</SubTitle>
+            <Text>
+              Soy un desarrollador web, y uno de mis objetivos es ser, en corto
+              plazo, desarrollador Fron-End y a largo plazo Fullstack. Uno de
+              mis pasatiempos son los videojuegos, en especial los juegos
+              shooters. Otros de mis pasatiempos es la lectura. Me gusta mucho
+              la lectura y hasta la fecha poseo una minibiblioteca. Unos de mis
+              hobbies es la perfumería. Poseo una colección de perfumes de
+              diseñador. Me gusta el futbol y soy fanatico de Boca Juniors
+            </Text>
+          </ContenedorText>
+        </FirstRow>
+        <SecondRow>
+          <div>
             <TextSR>i ❤️</TextSR>
             <ContenedorOscio>
               <TarjetaIcon>
@@ -278,31 +286,31 @@ const AboutMe = () => {
                 Fotografía
               </TarjetaIcon>
             </ContenedorOscio>
-            <ContenedorLinks>
-              <Boton
-                href="../../public/documents/CVPedro-Programacion.pdf"
-                download={"CV-PedroBenites"}
-              >
-                Mi CV <FontAwesomeIcon icon={faDownload} />
-              </Boton>
-              <Redes>
-                <Enlace href="/#">
-                  <FontAwesomeIcon icon={faInstagram} style={{}} />
-                </Enlace>
-                <Enlace href="/#">
-                  <FontAwesomeIcon icon={faLinkedin} />
-                </Enlace>
-                <Enlace href="/#">
-                  <FontAwesomeIcon icon={faGithub} />
-                </Enlace>
-              </Redes>
-            </ContenedorLinks>
-          </SecondRow>
-        </ContenedorBio>
-        <ContenedorModel>
-          <ModelComputer />
-        </ContenedorModel>
-      </Contenedor>
+          </div>
+          <ContenedorLinks>
+            <Boton
+              href="../../public/documents/CVPedro-Programacion.pdf"
+              download={"CV-PedroBenites"}
+            >
+              Mi CV <FontAwesomeIcon icon={faDownload} />
+            </Boton>
+            <Redes>
+              <Enlace href="/#">
+                <FontAwesomeIcon icon={faInstagram} style={{}} />
+              </Enlace>
+              <Enlace href="/#">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </Enlace>
+              <Enlace href="/#">
+                <FontAwesomeIcon icon={faGithub} />
+              </Enlace>
+            </Redes>
+          </ContenedorLinks>
+        </SecondRow>
+      </ContenedorBio>
+      <ContenedorModel>
+        <ModelComputer />
+      </ContenedorModel>
     </Section>
   );
 };

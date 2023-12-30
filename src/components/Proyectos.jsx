@@ -8,8 +8,8 @@ const Section = styled.div`
   display: flex;
   flex-flow: column nowrap;
   padding-top: 10px;
-  @media (max-width: 451px) {
-    height: auto;
+  @media (max-width: 1300px) {
+    height: 100%;
   }
 `;
 const ContenedorMain = styled.div`
@@ -22,8 +22,11 @@ const ContenedorMain = styled.div`
   padding-top: 50px;
   align-items: center;
   gap: 50px;
-  @media (max-width: 451px) {
+  @media (max-width: 1300px) {
     height: 100%;
+  }
+  @media (max-width: 767px) {
+    padding-top: 20px;
   }
 `;
 
@@ -34,7 +37,7 @@ const ContenedorTitle = styled.div`
   margin: 0 10px;
   align-items: center;
   justify-content: center;
-  @media (max-width: 451px) {
+  @media (max-width: 767px) {
     flex-flow: column-reverse nowrap;
     width: 100%;
   }
@@ -50,6 +53,9 @@ const ContenedorProyectos = styled.div`
   align-items: center;
   justify-content: center;
   gap: 50px;
+  @media (max-width: 1024px) {
+    flex-flow: wrap;
+  }
 `;
 
 const Card = styled.div`
@@ -67,7 +73,11 @@ const Card = styled.div`
 
   @media (max-width: 451px) {
     height: 50vh;
-    width: 60vw;
+    width: auto;
+  }
+  @media (max-width: 1024px) {
+    width: 70vw;
+    height: 100%;
   }
 `;
 const CardTitle = styled.h3``;
@@ -138,6 +148,10 @@ const CardLogo = styled.div`
   justify-content: end;
   gap: 30px;
   margin: 10px 0;
+  @media (max-width: 451px) {
+    justify-content: center;
+    padding-bottom: 10px;
+  }
 `;
 const Click = styled.a`
   width: 15%;
@@ -146,6 +160,9 @@ const Click = styled.a`
 const Proyectos = () => {
   const really = () => {
     alert("Encerio? :/");
+  };
+  const alerta = () => {
+    alert("En estos momentos no esta disponible la visualizacion :(");
   };
   return (
     <Section>
@@ -201,7 +218,7 @@ const Proyectos = () => {
                   <Click href="https://github.com/PedroBenites9/DawnPage">
                     <Github src="./img/GitHub.svg" />
                   </Click>
-                  <Button>Ver</Button>
+                  <Button onClick={alerta}>Ver</Button>
                 </CardLogo>
               </CardInfo>
             </Card>

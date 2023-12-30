@@ -23,7 +23,6 @@ const Container = styled.div`
   overflow-y: auto;
   scrollbar-width: none;
   @media (max-width: 451px) {
-    height: 100%;
   }
 `;
 

@@ -8,14 +8,13 @@ import "react-vertical-timeline-component/style.min.css";
 const Section = styled.div`
   height: 100%;
   scroll-snap-align: center;
-  margin: 5%;
-  margin: 5%;
-  @media (min-width: 1500px) {
-    height: 100vh;
-  }
   display: flex;
   flex-flow: column;
   justify-content: center;
+  @media (max-width: 767px) {
+    height: 100%;
+    padding: 30px 0px;
+  }
 `;
 
 const Title = styled.h1`
