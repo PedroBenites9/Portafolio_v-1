@@ -190,7 +190,8 @@ const ContenedorHyPData = styled.div`
     margin: 20px 0;
   }
   @media (max-width: 767px) {
-    width: auto;
+    margin: 0;
+    font-size: 1rem;
   }
 `;
 

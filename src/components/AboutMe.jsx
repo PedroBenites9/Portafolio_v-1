@@ -73,7 +73,7 @@ const FirstRow = styled.div`
   padding: 10px;
   @media (max-width: 912px) {
     padding: 0 20px;
-    /* flex-flow: column wrap; */
+    flex-flow: column wrap;
   }
 `;
 
@@ -86,7 +86,7 @@ const Selfie = styled.img`
   }
   @media (max-width: 451px) {
     height: auto;
-    width: 40%;
+    width: 80%;
   }
 `;
 
@@ -105,7 +105,7 @@ const SubTitle = styled.h3`
   font-size: 1.5rem;
   margin-bottom: 30px;
   @media (max-width: 451px) {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 5px;
   }
 `;
@@ -116,7 +116,7 @@ const Text = styled.p`
     font-size: 0.9rem;
   }
   @media (max-width: 451px) {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     padding: 20px;
   }
 `;
@@ -165,12 +165,16 @@ const ContenedorOscio = styled.div`
   gap: 30px;
   @media (max-width: 451px) {
     gap: 15px;
+    width: auto;
   }
 `;
 
 const TarjetaIcon = styled.div`
   display: flex;
   flex-flow: column nowrap;
+  @media (max-width: 464px) {
+    font-size: 0.7rem;
+  }
 `;
 
 const ContenedorLinks = styled.div`
