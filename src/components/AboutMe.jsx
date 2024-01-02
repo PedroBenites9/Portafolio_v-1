@@ -33,6 +33,9 @@ const Section = styled.div`
   @media (max-width: 767px) {
     height: 100%;
   }
+  @media (max-width: 451px) {
+    height: 100vh;
+  }
 `;
 
 const ContenedorModel = styled.div`
@@ -67,13 +70,20 @@ const FirstRow = styled.div`
   align-items: center;
   justify-content: center;
   gap: 50px;
-  gap: 30px;
   padding: 10px;
+  @media (max-width: 912px) {
+    padding: 0 20px;
+    /* flex-flow: column wrap; */
+  }
 `;
 
 const Selfie = styled.img`
   width: auto;
   height: 40vh;
+  @media (max-width: 912px) {
+    width: 40%;
+    height: auto;
+  }
   @media (max-width: 451px) {
     height: auto;
     width: 40%;
@@ -102,8 +112,11 @@ const SubTitle = styled.h3`
 const Text = styled.p`
   text-align: justify;
   word-spacing: 4px;
+  @media (max-width: 912px) {
+    font-size: 0.9rem;
+  }
   @media (max-width: 451px) {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     padding: 20px;
   }
 `;
@@ -124,6 +137,7 @@ const SecondRow = styled.div`
   justify-content: center;
   align-items: center;
   gap: 50px;
+
   @media (max-width: 767px) {
     flex-flow: column wrap;
     gap: 0;
@@ -164,7 +178,9 @@ const ContenedorLinks = styled.div`
   flex-flow: column nowrap;
   gap: 30px;
   margin: 50px;
-  grid-area: 2 / 2 / 3 / 3;
+  @media (max-width: 912px) {
+    margin: 30px 0 10px;
+  }
   @media (max-width: 451px) {
     gap: 10px;
   }

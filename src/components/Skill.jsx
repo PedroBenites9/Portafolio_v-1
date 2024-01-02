@@ -17,7 +17,7 @@ const Section = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-decoration-line: underline;
   text-align: center;
   @media (max-width: 767px) {
@@ -46,6 +46,7 @@ const Contenedor = styled.div`
 const ContenedorSkill = styled.div`
   display: flex;
   gap: 20px;
+  margin-top: 20px;
   @media (max-width: 767px) {
     flex-flow: row wrap;
     justify-content: center;
@@ -100,6 +101,7 @@ const Image = styled.img`
 const ContenedorLF = styled.div`
   display: flex;
   gap: 20px;
+  margin-top: 20px;
   @media (max-width: 767px) {
     flex-flow: row wrap;
     justify-content: center;
@@ -144,21 +146,23 @@ const ContenedorLFData = styled.div`
 
 const ContenedorHyP = styled.div`
   display: flex;
-  gap: 20px;
+  flex-flow: row wrap;
   justify-content: center;
+  gap: 0 20px;
   @media (max-width: 767px) {
     flex-flow: row wrap;
     justify-content: center;
     gap: 5px;
   }
 `;
+
 const ContenedorHyPData = styled.div`
   display: flex;
   border: 4px solid white;
   flex-flow: nowrap row;
   align-items: center;
   color: white;
-  width: 100%;
+  width: auto;
   padding: 6px 10px 3px;
   margin: 30px 0;
   gap: 5px;
@@ -181,6 +185,9 @@ const ContenedorHyPData = styled.div`
     border-color: #ca4230;
     color: white;
     background: #8b1404;
+  }
+  @media (max-width: 1115px) {
+    margin: 20px 0;
   }
   @media (max-width: 767px) {
     width: auto;

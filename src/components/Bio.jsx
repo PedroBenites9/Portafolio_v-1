@@ -16,9 +16,6 @@ const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
 `;
 const Name = styled.h1`
   font-weight: 800;
@@ -28,39 +25,37 @@ const Description = styled.h1`
   font-weight: 800;
 `;
 const Container = styled.div`
-  height: 100%;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 100%;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-  }
 `;
 
 const Title = styled.div`
   text-align: center;
+  @media (max-width: 464px) {
+    font-size: 0.9rem;
+  }
 `;
 
 const Img = styled.img`
   border-radius: 60px;
   width: 350px;
   height: 350px;
-
   animation: animate 1s infinite ease alternate;
-
-  @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
-  }
-
   @keyframes animate {
     to {
       transform: translateY(10px);
     }
+  }
+
+  @media (max-width: 464px) {
+    width: 80vw;
+    height: auto;
+    margin: 20px;
   }
 `;
 
@@ -68,6 +63,8 @@ const Icons = styled.div`
   display: flex;
   gap: 3rem;
   font-size: 3rem;
+  @media (max-width: 464px) {
+  }
 `;
 const Instagram = styled.a`
   &:after {
@@ -159,6 +156,9 @@ const Button = styled.button`
 `;
 
 const Bio = () => {
+  const handleSendEmail = () => {
+    location.href = "mailto:pedro.benites99@hotmail.com";
+  };
   return (
     <Section>
       <Container>
@@ -192,7 +192,7 @@ const Bio = () => {
               <FontAwesomeIcon icon={faGithub} />
             </GitHub>
           </Icons>
-          <Button>Contactar</Button>
+          <Button onClick={handleSendEmail}>Contactar</Button>
         </Fade>
       </Container>
     </Section>

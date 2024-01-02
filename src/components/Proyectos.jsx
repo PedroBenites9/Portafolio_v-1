@@ -61,38 +61,43 @@ const ContenedorProyectos = styled.div`
 const Card = styled.div`
   display: flex;
   flex-flow: column nowrap;
-  width: 20vw;
-  height: 100%;
   background-color: #525252;
   border-radius: 20px;
   transition: transform 300ms ease-out;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: auto;
+  width: 20vw;
   &:hover {
     box-shadow: -9px 10px 17px 0px rgba(5, 5, 5, 0.5);
     transform: translate(0, -14px);
   }
 
-  @media (max-width: 451px) {
-    height: 50vh;
-    width: auto;
-  }
   @media (max-width: 1024px) {
-    width: 70vw;
-    height: 100%;
+    width: 50vw;
+  }
+
+  @media (max-width: 451px) {
+    width: 100%;
+    height: 50vh;
   }
 `;
 const CardTitle = styled.h3``;
 const CardImg = styled.img`
-  margin: 20px;
   border-radius: 20px;
   min-height: 250px;
   object-fit: cover;
-  @media (max-width: 451) {
+  width: 100%;
+  @media (max-width: 1024px) {
+    width: 90%;
+    height: 100%;
   }
 `;
 const CardDescription = styled.p``;
 
 const CardInfo = styled.div`
-  padding: 10px 20px;
+  padding: 20px 0 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 30px repeat(2, 1fr);
@@ -106,6 +111,10 @@ const ContenedorCard = styled.div`
   gap: 30px;
   align-items: center;
   justify-content: center;
+  @media (max-width: 900px) {
+    width: 80vh;
+    flex-flow: column nowrap;
+  }
   @media (max-width: 451px) {
     width: 100%;
   }
@@ -148,6 +157,9 @@ const CardLogo = styled.div`
   justify-content: end;
   gap: 30px;
   margin: 10px 0;
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
   @media (max-width: 451px) {
     justify-content: center;
     padding-bottom: 10px;
