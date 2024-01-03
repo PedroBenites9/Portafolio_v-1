@@ -5,6 +5,16 @@ a {
     font-weight: 400;
 }
 
+.Icon__redes {
+    width: 80%;
+    height: auto;
+
+    @media(max-width: 456px) {
+        width: 5vw;
+        height: auto;
+    }
+}
+
 /* class */
 .socialMedia {
     color: white;

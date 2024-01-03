@@ -8,7 +8,7 @@ const Section = styled.div`
   display: flex;
   flex-flow: column nowrap;
   padding-top: 10px;
-  @media (max-width: 1300px) {
+  @media (max-width: 1350px) {
     height: 100%;
   }
 `;
@@ -22,7 +22,7 @@ const ContenedorMain = styled.div`
   padding-top: 50px;
   align-items: center;
   gap: 50px;
-  @media (max-width: 1300px) {
+  @media (max-width: 1350px) {
     height: 100%;
   }
   @media (max-width: 767px) {

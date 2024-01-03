@@ -21,6 +21,8 @@ import {
   faMusic,
 } from "@fortawesome/free-solid-svg-icons";
 
+import "../css/style.css";
+
 const Section = styled.div`
   display: flex;
   height: 100vh;
@@ -30,6 +32,7 @@ const Section = styled.div`
   align-items: center;
   width: 100%;
   scroll-snap-align: center;
+
   @media (max-width: 767px) {
     height: 100%;
   }
@@ -59,7 +62,7 @@ const ContenedorBio = styled.div`
     width: 100%;
   }
   @media (max-width: 767px) {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 0;
   }
 `;
@@ -74,6 +77,9 @@ const FirstRow = styled.div`
   @media (max-width: 912px) {
     padding: 0 20px;
     flex-flow: column wrap;
+  }
+  @media (max-width: 456px) {
+    gap: 10px;
   }
 `;
 
@@ -96,7 +102,7 @@ const Title = styled.h1`
   text-align: center;
   @media (max-width: 451px) {
     font-size: 1rem;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
 `;
 
@@ -106,7 +112,7 @@ const SubTitle = styled.h3`
   margin-bottom: 30px;
   @media (max-width: 451px) {
     font-size: 0.9rem;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
 `;
 const Text = styled.p`
@@ -117,7 +123,6 @@ const Text = styled.p`
   }
   @media (max-width: 451px) {
     font-size: 0.6rem;
-    padding: 20px;
   }
 `;
 
@@ -182,10 +187,13 @@ const ContenedorLinks = styled.div`
   flex-flow: column nowrap;
   gap: 30px;
   margin: 50px;
+  justify-content: center;
+  align-items: center;
   @media (max-width: 912px) {
     margin: 30px 0 10px;
   }
   @media (max-width: 451px) {
+    flex-flow: row nowrap;
     gap: 10px;
   }
 `;
@@ -194,6 +202,11 @@ const Redes = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20px;
+  @media (max-width: 456px) {
+    gap: 0px;
+    height: auto;
+    width: 100%;
+  }
 `;
 
 const Boton = styled.a`
@@ -222,17 +235,24 @@ const Boton = styled.a`
     background-color: rgba(165, 164, 164, 0.616);
     color: #000000;
   }
+  width: 80%;
+  @media (max-width: 456px) {
+    width: 20vw;
+    height: 100%;
+  }
 `;
 
 const Enlace = styled.a`
   color: #616161;
-  font-size: 3rem;
   padding: 5px 10px;
   border-radius: 10px;
 
   &:hover {
     background-color: #161616;
     transition: all 0.5s;
+  }
+  @media (max-width: 456px) {
+    padding: 0px 10px;
   }
 `;
 
@@ -316,13 +336,13 @@ const AboutMe = () => {
             </Boton>
             <Redes>
               <Enlace href="/#">
-                <FontAwesomeIcon icon={faInstagram} style={{}} />
+                <FontAwesomeIcon className="Icon__redes" icon={faInstagram} />
               </Enlace>
               <Enlace href="/#">
-                <FontAwesomeIcon icon={faLinkedin} />
+                <FontAwesomeIcon className="Icon__redes" icon={faLinkedin} />
               </Enlace>
               <Enlace href="/#">
-                <FontAwesomeIcon icon={faGithub} />
+                <FontAwesomeIcon className="Icon__redes" icon={faGithub} />
               </Enlace>
             </Redes>
           </ContenedorLinks>
