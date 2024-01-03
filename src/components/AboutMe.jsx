@@ -286,47 +286,45 @@ const AboutMe = () => {
           </ContenedorText>
         </FirstRow>
         <SecondRow>
-          <div>
-            <TextSR>i ❤️</TextSR>
-            <ContenedorOscio>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faGamepad} />
-                Videojuegos
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faCode} />
-                Programar
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faCat} />
-                Michis
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faMusic} />
-                Música
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faBook} />
-                Libros
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faFutbol} />
-                Futbol
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faBottleDroplet} />
-                Perfumes
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faFilm} />
-                Peliculas
-              </TarjetaIcon>
-              <TarjetaIcon>
-                <FontAwesomeIcon icon={faCameraRetro} />
-                Fotografía
-              </TarjetaIcon>
-            </ContenedorOscio>
-          </div>
+          <TextSR>i ❤️</TextSR>
+          <ContenedorOscio>
+            <TarjetaIcon>
+              <FontAwesomeIcon icon={faGamepad} />
+              Videojuegos
+            </TarjetaIcon>
+            <TarjetaIcon>
+              <FontAwesomeIcon icon={faCode} />
+              Programar
+            </TarjetaIcon>
+            <TarjetaIcon>
+              <FontAwesomeIcon icon={faCat} />
+              Michis
+            </TarjetaIcon>
+            <TarjetaIcon>
+              <FontAwesomeIcon icon={faMusic} />
+              Música
+            </TarjetaIcon>
+            <TarjetaIcon>
+              <FontAwesomeIcon icon={faBook} />
+              Libros
+            </TarjetaIcon>
+            <TarjetaIcon>
+              <FontAwesomeIcon icon={faFutbol} />
+              Futbol
+            </TarjetaIcon>
+            <TarjetaIcon>
+              <FontAwesomeIcon icon={faBottleDroplet} />
+              Perfumes
+            </TarjetaIcon>
+            <TarjetaIcon>
+              <FontAwesomeIcon icon={faFilm} />
+              Peliculas
+            </TarjetaIcon>
+            <TarjetaIcon>
+              <FontAwesomeIcon icon={faCameraRetro} />
+              Fotografía
+            </TarjetaIcon>
+          </ContenedorOscio>
           <ContenedorLinks>
             <Boton
               href="../../public/documents/CVPedro-Programacion.pdf"
