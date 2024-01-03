@@ -16,6 +16,10 @@ a {
 }
 
 /* class */
+.bio_socialMedia {
+    width: 70%;
+}
+
 .socialMedia {
     color: white;
     display: flex;
@@ -29,6 +33,11 @@ a {
     text-align: center;
     position: relative;
     overflow: hidden;
+
+    @media(max-width: 456px) {
+        width: 70%;
+        height: auto;
+    }
 }
 
 /* CSS */

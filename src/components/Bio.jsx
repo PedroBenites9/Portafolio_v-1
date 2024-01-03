@@ -53,7 +53,7 @@ const Img = styled.img`
   }
 
   @media (max-width: 464px) {
-    width: 80vw;
+    width: 50vw;
     height: auto;
     margin: 20px;
   }
@@ -63,7 +63,8 @@ const Icons = styled.div`
   display: flex;
   gap: 3rem;
   font-size: 3rem;
-  @media (max-width: 464px) {
+  @media (max-width: 456px) {
+    gap: 10px;
   }
 `;
 const Instagram = styled.a`
@@ -177,19 +178,19 @@ const Bio = () => {
               href="https://www.instagram.com/_.pepox/"
               className="socialMedia"
             >
-              <FontAwesomeIcon icon={faInstagram} />
+              <FontAwesomeIcon className="bio_socialMedia" icon={faInstagram} />
             </Instagram>
             <Linkedin
               href="https://www.linkedin.com/in/pedro-benites99/"
               className="socialMedia"
             >
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon className="bio_socialMedia" icon={faLinkedin} />
             </Linkedin>
             <GitHub
               href="https://github.com/PedroBenites9"
               className="socialMedia"
             >
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon className="bio_socialMedia" icon={faGithub} />
             </GitHub>
           </Icons>
           <Button onClick={handleSendEmail}>Contactar</Button>
