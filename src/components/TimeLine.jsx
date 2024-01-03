@@ -51,10 +51,10 @@ const TimeLine = () => {
             Secundaria Tecnica
           </h3>
           <Text>
-            Estudie en una secundaria tecnica finalizando como Tecnico en
-            Computación. En el curso de programacion aprendi las bases de
-            algoritmos y mi primer lenguaje fue Java. <br /> Mis inicios de
-            desarrollo web comenzaban en este punto
+            Estudie en la escuela tecnica N32 D.E 14 &quot; Gral Jose de San
+            Martin &quot; egresandome como tecnico en computacion y ayudante de
+            programacion
+            <br /> Mis inicios de desarrollo web comenzaban en este punto
           </Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -66,10 +66,14 @@ const TimeLine = () => {
         >
           <h3 className="vertical-timeline-element-title">Desarrollador web</h3>
           <Text>
-            Durante este periodo hice muchos cursos en Udemy, CoderHouse y en
-            algunos canales de Youtube. Hasta este punto sentia un punto de
-            estancamiento, pero con constancia llegue a encontrar mi camino al
-            desarrollo Front-End.
+            Durante este periodo realice muchos cursos en Udemy, CoderHouse y en
+            algunos canales de Youtube realizando proyectos muy sencillos.
+            <br />
+            Inicia mi interes por el desarrollo web, viendo videos de{" "}
+            <a href="https://www.youtube.com/@VictorRoblesWEB">
+              Victor Robles
+            </a>{" "}
+            y <a href="https://www.youtube.com/@DevTalles">Fernando Herrera</a>
           </Text>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -83,9 +87,10 @@ const TimeLine = () => {
             Desarrollador Front-end
           </h3>
           <Text>
-            Ya con los conocimientos solidos basicos de HTML, CSS y JS termine
-            realizando diversos proyectos propios y a su vez mi propio
-            portafolio
+            Realice un curso de desarrollo front-end en CoderHouse desde 0 hasta
+            el uso de React. En ella hice mis primera paginas web. Una vez
+            finalizado el curso comence a experimentar nuevas librerias y
+            frameworks para
           </Text>
         </VerticalTimelineElement>
       </VerticalTimeline>

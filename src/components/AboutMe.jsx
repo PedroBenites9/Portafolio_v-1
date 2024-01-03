@@ -86,7 +86,7 @@ const Selfie = styled.img`
   }
   @media (max-width: 451px) {
     height: auto;
-    width: 80%;
+    width: 50%;
   }
 `;
 

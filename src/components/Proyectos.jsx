@@ -68,19 +68,20 @@ const Card = styled.div`
   align-items: center;
   padding: 20px;
   height: auto;
-  width: 20vw;
+  width: 20%;
+  margin: 20px;
   &:hover {
     box-shadow: -9px 10px 17px 0px rgba(5, 5, 5, 0.5);
     transform: translate(0, -14px);
   }
 
-  @media (max-width: 1024px) {
-    width: 50vw;
+  @media (max-width: 1324px) {
+    width: 30%;
   }
 
   @media (max-width: 451px) {
-    width: 100%;
-    height: 50vh;
+    width: auto;
+    height: 100%;
   }
 `;
 const CardTitle = styled.h3``;
@@ -89,9 +90,9 @@ const CardImg = styled.img`
   min-height: 250px;
   object-fit: cover;
   width: 100%;
+  height: calc(100% - 10px);
   @media (max-width: 1024px) {
     width: 90%;
-    height: 100%;
   }
 `;
 const CardDescription = styled.p``;
@@ -108,11 +109,13 @@ const CardInfo = styled.div`
 const ContenedorCard = styled.div`
   display: flex;
   flex-flow: row wrap;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
   justify-content: center;
+  height: auto;
+  width: 100%;
   @media (max-width: 900px) {
-    width: 80vh;
+    width: 80vw;
     flex-flow: column nowrap;
   }
   @media (max-width: 451px) {
@@ -130,7 +133,6 @@ const Button = styled.a`
   display: inline-block;
   padding: 10px 30px;
   border: 0.1em solid #666666;
-  margin: 0 0.3em 0.3em 0;
   border-radius: 10px;
   box-sizing: border-box;
   text-decoration: none;
@@ -154,15 +156,14 @@ const CardLogo = styled.div`
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  justify-content: end;
-  gap: 30px;
+  justify-content: flex-end;
+  gap: 20px;
   margin: 10px 0;
   @media (max-width: 1024px) {
     justify-content: center;
+    gap: 20px;
   }
   @media (max-width: 451px) {
-    justify-content: center;
-    padding-bottom: 10px;
   }
 `;
 const Click = styled.a`
