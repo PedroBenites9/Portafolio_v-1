@@ -29,7 +29,7 @@ const Title = styled.h1`
   }
 `;
 const Text = styled.p`
-  font-size: 2rem;
+  font-size: auto !important;
   @media (max-width: 451px) {
     font-size: 1rem;
   }

@@ -40,13 +40,10 @@ a {
     }
 }
 
+/* TimeLine */
+
 /* CSS */
 
-.container__TimeLine {
-    @media(max-width: 451px) {
-        margin: 10px auto;
-    }
-}
 
 .button-28:disabled {
     pointer-events: none;
@@ -86,13 +83,4 @@ a {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-}
-
-
-.vertical-timeline-element-content {
-    @media(min-width: 1500px) {
-        max-height: 20vh;
-        width: 50vh;
-        font-size: 1.2rem;
-    }
 }

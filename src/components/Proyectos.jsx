@@ -61,15 +61,15 @@ const ContenedorProyectos = styled.div`
 const Card = styled.div`
   display: flex;
   flex-flow: column nowrap;
+
   background-color: #525252;
   border-radius: 20px;
   transition: transform 300ms ease-out;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
-  height: auto;
+  justify-content: center;
+  padding: 10px 20px 0 20px;
+  height: 100%;
   width: 20%;
-  margin: 20px;
   &:hover {
     box-shadow: -9px 10px 17px 0px rgba(5, 5, 5, 0.5);
     transform: translate(0, -14px);
@@ -87,15 +87,20 @@ const Card = styled.div`
 const CardTitle = styled.h3``;
 const CardImg = styled.img`
   border-radius: 20px;
-  min-height: 250px;
+  min-height: 200px;
   object-fit: cover;
   width: 100%;
-  height: calc(100% - 10px);
   @media (max-width: 1024px) {
     width: 90%;
   }
 `;
-const CardDescription = styled.p``;
+const CardDescription = styled.div`
+  font-size: 1rem;
+  text-align: justify;
+  @media (max-width: 965px) {
+    font-size: 0.8rem;
+  }
+`;
 
 const CardInfo = styled.div`
   padding: 20px 0 0;
